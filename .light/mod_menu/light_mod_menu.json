@@ -1,0 +1,322 @@
+{
+    "namespace": "light_mod_menu",
+    "light_mod_menu@config.config": {
+        "controls": [
+            {
+                "@mod_menu_button": {}
+            },
+            {
+                "@mod_menu": {}
+            }
+        ],
+        "type": "panel"
+    },
+    "mod_menu_button@common_toggles.mod_menu_button": {
+        "$button_text": "Mods",
+        "$toggle_view_binding_name": "mod_menu",
+        "anchor_from": "bottom_left",
+        "anchor_to": "bottom_left",
+        "$toggle_group_forced_index": 1,
+        "size": [
+            32,
+            18
+        ]
+    },
+    "mod_menu": {
+        "type": "panel",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "mod_menu",
+                "source_property_name": "#toggle_state",
+                "target_property_name": "#visible"
+            }
+        ],
+        "controls": [
+            {
+                "bg": {
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "type": "image",
+                    "texture": ".light/textures/bg/mod_menu",
+                    "size": [
+                        300,
+                        175
+                    ],
+                    "alpha": 0.79,
+                    "layer": 1,
+                    "controls": [
+                        {
+                            "icon": {
+                                "type": "image",
+                                "texture": "pack_icon",
+                                "size": [
+                                    32,
+                                    24
+                                ],
+                                "offset": [
+                                    5,
+                                    5
+                                ],
+                                "anchor_from": "top_left",
+                                "anchor_to": "top_left"
+                            }
+                        },
+                        {
+                            "category@light_categories.categories": {
+                                "anchor_from": "top_middle",
+                                "anchor_to": "top_middle",
+                                "offset": [
+                                    37,
+                                    5
+                                ]
+                            }
+                        },
+                        {
+                            "general@light_mod_menu.general_page": {}
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "general_page": {
+        "type": "panel",
+        "size": [
+            "100%",
+            "100%c"
+        ],
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "mods_tab",
+                "source_property_name": "#toggle_state",
+                "target_property_name": "#visible"
+            }
+        ],
+        "$label_offset": [
+            10,
+            0
+        ],
+        "controls": [
+            {
+                "armorhud@common_toggles.mod_toggles": {
+                    "$toggle_tags": "$armor_hud",
+                    "$toggle_view_binding_name": "armor_hud",
+                    "$button_text": "Armorhud",
+                    "$button_icon": ".light/textures/icons/armor_hud",
+                    "layer": 40,
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "$label_offset": [
+                        5,
+                        0
+                    ],
+                    "$icon_offset": [
+                        0,
+                        2
+                    ],
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        15,
+                        -30
+                    ]
+                }
+            },
+            {
+                "directionhud@common_toggles.mod_toggles": {
+                    "$toggle_tags": "$direction_hud",
+                    "$toggle_view_binding_name": "direction_hud",
+                    "$button_text": "Directionhud",
+                    "$button_icon": ".light/textures/icons/direction_hud",
+                    "layer": 40,
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        15,
+                        0
+                    ]
+                }
+            },
+            {
+                "offhand@common_toggles.mod_toggles": {
+                    "$toggle_tags": "$offhand_hud",
+                    "$toggle_view_binding_name": "offhand_hud",
+                    "$button_text": "Offhandhud",
+                    "$button_icon": ".light/textures/icons/offhand_hud",
+                    "layer": 40,
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        15,
+                        30
+                    ]
+                }
+            },
+            {
+                "speedhud@common_toggles.mod_toggles": {
+                    "$toggle_tags": "$speed_meter",
+                    "$toggle_view_binding_name": "speed_hud",
+                    "$button_icon": ".light/textures/icons/speed_hud",
+                    "$button_text": "Speedhud",
+                    "layer": 40,
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "$label_offset": [
+                        5,
+                        0
+                    ],
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        15,
+                        60
+                    ]
+                }
+            },
+            {
+                "statushud@common_toggles.mod_toggles": {
+                    "$toggle_tags": "$status_hud",
+                    "$toggle_view_binding_name": "status_hud",
+                    "$button_icon": ".light/textures/icons/status_hud",
+                    "$button_text": "Statushud",
+                    "layer": 40,
+                    "$label_offset": [
+                        5,
+                        0
+                    ],
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        0,
+                        -30
+                    ]
+                }
+            },
+            {
+                "@common_toggles.mod_toggles": {
+                    "$toggle_view_binding_name": "",
+                    "layer": 40,
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "@common_toggles.mod_toggles": {
+                    "$toggle_view_binding_name": "",
+                    "layer": 40,
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        0,
+                        30
+                    ]
+                }
+            },
+            {
+                "@common_toggles.mod_toggles": {
+                    "$toggle_view_binding_name": "",
+                    "layer": 40,
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        0,
+                        60
+                    ]
+                }
+            },
+            {
+                "@common_toggles.mod_toggles": {
+                    "$toggle_view_binding_name": "",
+                    "$button_text": "",
+                    "layer": 40,
+                    "anchor_from": "right_middle",
+                    "anchor_to": "right_middle",
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        -15,
+                        -30
+                    ]
+                }
+            },
+            {
+                "@common_toggles.mod_toggles": {
+                    "$toggle_view_binding_name": "",
+                    "layer": 40,
+                    "anchor_from": "right_middle",
+                    "anchor_to": "right_middle",
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        -15,
+                        0
+                    ]
+                }
+            },
+            {
+                "@common_toggles.mod_toggles": {
+                    "$toggle_view_binding_name": "",
+                    "layer": 40,
+                    "anchor_from": "right_middle",
+                    "anchor_to": "right_middle",
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        -15,
+                        30
+                    ]
+                }
+            },
+            {
+                "@common_toggles.mod_toggles": {
+                    "$toggle_view_binding_name": "",
+                    "layer": 40,
+                    "anchor_from": "right_middle",
+                    "anchor_to": "right_middle",
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        -15,
+                        60
+                    ]
+                }
+            }
+        ]
+    }
+}
