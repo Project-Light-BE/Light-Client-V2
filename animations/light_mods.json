@@ -1,0 +1,49 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.player.light_mods": {
+            "loop": true,
+            "bones": {
+                "offhand": {
+                    "position": [
+                        0,
+                        800,
+                        0
+                    ],
+                    "scale": 0.87
+                },
+                "speedometer": {
+                    "position": [
+                        0,
+                        -150,
+                        0
+                    ]
+                },
+                "direction_hud": {
+                    "position": [
+                        0,
+                        -450,
+                        0
+                    ],
+                    "scale": 5.0
+                },
+                "armor_hud": {
+                    "position": [
+                        0,
+                        200,
+                        0
+                    ],
+                    "scale": 1
+                },
+                "status": {
+                    "position": [
+                        0,
+                        500,
+                        0
+                    ],
+                    "scale": 1.2
+                }
+            }
+        }
+    }
+}
