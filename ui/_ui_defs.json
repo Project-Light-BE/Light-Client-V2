@@ -1,1 +1,11 @@
-
+{
+    "ui_defs": [
+        "config.json",
+        ".light/mod_menu/light_categories.json",
+        ".light/mod_menu/light_mods_panel.json",
+        ".light/mod_menu/light_mod_menu.json",
+        ".light/common/buttons/light_buttons.json",
+        ".light/common/buttons/light_image_buttons.json",
+        ".light/screens/pause/light_pause.json"
+    ]
+}
