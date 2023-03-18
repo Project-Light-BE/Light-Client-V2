@@ -1,0 +1,28 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Project Light V2",
+        "uuid": "7d70dcf0-9f8b-9662-6687-b1d925e90749",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            17,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "542c7b72-fe10-a24c-6735-ce4109ad6413",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}
