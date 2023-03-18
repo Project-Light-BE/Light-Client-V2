@@ -1,0 +1,116 @@
+{
+    "namespace": "pause",
+    "content": {
+        "type": "panel",
+        "controls": [
+            {
+                "Hide_pause@common_toggles.mod_menu_button": {
+                    "$button_text": "Mods",
+                    "$toggle_view_binding_name": "mod_menu",
+                    "anchor_from": "bottom_left",
+                    "anchor_to": "bottom_left",
+                    "size": [
+                        32,
+                        18
+                    ]
+                }
+            },
+            {
+                "@main_menu": {}
+            }
+        ]
+    },
+    "main_menu": {
+        "type": "panel",
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "layer": -1,
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "mod_menu",
+                "source_property_name": "(not #toggle_state)",
+                "target_property_name": "#visible"
+            }
+        ],
+        "controls": [
+            {
+                "content": {
+                    "type": "panel",
+                    "size": [
+                        260,
+                        165
+                    ],
+                    "controls": [
+                        {
+                            "@main_menu_bg": {}
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "main_menu_bg": {
+        "type": "panel",
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "(not mod_menu)",
+                "source_property_name": "#toggle_state",
+                "target_property_name": "#visible"
+            }
+        ],
+        "controls": [
+            {
+                "save@light_buttons.light_button": {
+                    "size": [
+                        96,
+                        25
+                    ],
+                    "offset": [
+                        0,
+                        103
+                    ],
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "$pressed_button_name": "button.menu_quit",
+                    "$button_text": "Save And Quit"
+                }
+            },
+            {
+                "settings_button@light_buttons.light_button": {
+                    "size": [
+                        96,
+                        25
+                    ],
+                    "offset": [
+                        0,
+                        77
+                    ],
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "$pressed_button_name": "button.menu_settings",
+                    "$button_text": "Settings"
+                }
+            },
+            {
+                "play_button@light_buttons.light_button": {
+                    "size": [
+                        96,
+                        25
+                    ],
+                    "offset": [
+                        0,
+                        51
+                    ],
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "$pressed_button_name": "button.menu_continue",
+                    "$button_text": "Resume"
+                }
+            }
+        ]
+    }
+}
