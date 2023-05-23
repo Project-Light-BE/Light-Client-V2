@@ -1,1 +1,45 @@
-{"namespace":"light_header","header":{"size":["100%","25px"],"offset":[0,"-2px"],"texture":"textures/ui/header_bar","type":"image","anchor_from":"top_middle","anchor_to":"top_middle","controls":[{"back_button@common.back_title_button":{"anchor_from":"left_middle","anchor_to":"left_middle","layer":200,"offset":[2,-1]}},{"header_label":{"anchor_from":"center","anchor_to":"center","color":"black","layer":1,"max_size":["95%",10],"text":"$header_text","text_alignment":"center","type":"label"}}]}}
+{
+  "namespace": "light_header",
+  "header": {
+    "size": [
+      "100%",
+      "25px"
+    ],
+    "offset": [
+      0,
+      "-2px"
+    ],
+    "texture": "textures/ui/header_bar",
+    "type": "image",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "controls": [
+      {
+        "back_button@common.back_title_button": {
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "layer": 200,
+          "offset": [
+            2,
+            -1
+          ]
+        }
+      },
+      {
+        "header_label": {
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "color": "black",
+          "layer": 1,
+          "max_size": [
+            "95%",
+            10
+          ],
+          "text": "$header_text",
+          "text_alignment": "center",
+          "type": "label"
+        }
+      }
+    ]
+  }
+}
