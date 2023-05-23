@@ -1,0 +1,248 @@
+{
+    "namespace": "settings_common",
+    "dynamic_dialog_screen@common.base_screen": {
+        "type": "screen",
+        "cache_screen": false,
+        "button_mappings": [
+            {
+                "from_button_id": "button.menu_cancel",
+                "to_button_id": "button.menu_exit",
+                "mapping_type": "global"
+            },
+            {
+                "from_button_id": "button.menu_tab_left",
+                "to_button_id": "button.menu_tab_left",
+                "mapping_type": "global",
+                "scope": "view"
+            },
+            {
+                "from_button_id": "button.menu_tab_right",
+                "to_button_id": "button.menu_tab_right",
+                "mapping_type": "global",
+                "scope": "view"
+            }
+        ],
+        "$screen_content": "settings_common.content",
+        "$screen_bg_content": "light_bg.light_bg",
+        "$is_full_screen_layout": true
+    },
+    "content@common_dialogs.main_panel_no_buttons": {
+        "size": [
+            "65%",
+            "70%"
+        ],
+        "offset": [
+            0,
+            0
+        ],
+        "$child_control": "$dialog_content",
+        "$text_name": "Settings",
+        "$fill_alpha": 0
+    },
+    "dialog_content": {
+        "type": "panel",
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "controls": [
+            {
+                "selector_area@settings_common.selector_area": {}
+            },
+            {
+                "content_area@settings_common.content_area": {}
+            },
+            {
+                "section_divider@settings_common.section_divider": {}
+            },
+            {
+                "popup_dialog_factory": {
+                    "type": "factory",
+                    "control_ids": {
+                        "purchase_failed": "@realms_create.popup_dialog__purchase_failed",
+                        "purchase_in_progress": "@realms_create.popup_dialog__purchase_in_progress",
+                        "share_by_link": "@realms_whitelist.popup_dialog__share_by_link",
+                        "options_modal": "@realms_whitelist.popup_dialog__options",
+                        "backups_modal": "@realms_settings.popup_dialog__backups"
+                    }
+                }
+            }
+        ]
+    },
+    "selector_group_label": {
+        "type": "label",
+        "size": [
+            "100%",
+            "default"
+        ],
+        "color": "$main_header_text_color",
+        "offset": [
+            15,
+            0
+        ]
+    },
+    "scrollable_selector_area_content": {
+        "type": "panel",
+        "offset": [
+            "2px",
+            "2px"
+        ],
+        "size": [
+            "100% - 4px",
+            "100%c + 4px"
+        ],
+        "controls": [
+            {
+                "$selector_stack_panel@$selector_stack_panel": {}
+            }
+        ]
+    },
+    "selector_area": {
+        "type": "panel",
+        "offset": [
+            2,
+            0
+        ],
+        "size": [
+            "30% - 3px",
+            "100%-2px"
+        ],
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "layer": 2,
+        "focus_container": true,
+        "use_last_focus": true,
+        "$focus_nagivation_mode_override_down|default": "contained",
+        "$focus_nagivation_mode_override_up|default": "contained",
+        "$focus_nagivation_mode_override_left|default": "",
+        "$focus_nagivation_mode_override_right|default": "",
+        "focus_nagivation_mode_down": "$focus_nagivation_mode_override_down",
+        "focus_nagivation_mode_up": "$focus_nagivation_mode_override_up",
+        "focus_nagivation_mode_left": "$focus_nagivation_mode_override_left",
+        "focus_nagivation_mode_right": "$focus_nagivation_mode_override_right",
+        "controls": [
+            {
+                "scrolling_panel@common.scrolling_panel": {
+                    "$scrolling_content": "settings_common.scrollable_selector_area_content",
+                    "$show_background": false,
+                    "$scroll_size": [
+                        "5px",
+                        "100% - 4px"
+                    ],
+                    "$scroll_bar_left_padding_size": [
+                        1,
+                        0
+                    ]
+                }
+            }
+        ]
+    },
+    "content_area": {
+        "type": "panel",
+        "offset": [
+            "-1px",
+            0
+        ],
+        "size": [
+            "70% - 8px",
+            "100%-2px"
+        ],
+        "anchor_from": "top_right",
+        "anchor_to": "top_right",
+        "layer": 1,
+        "focus_container": true,
+        "use_last_focus": false,
+        "$focus_nagivation_mode_override_down|default": "contained",
+        "$focus_nagivation_mode_override_up|default": "contained",
+        "$focus_nagivation_mode_override_left|default": "",
+        "$focus_nagivation_mode_override_right|default": "",
+        "focus_nagivation_mode_down": "$focus_nagivation_mode_override_down",
+        "focus_nagivation_mode_up": "$focus_nagivation_mode_override_up",
+        "focus_nagivation_mode_left": "$focus_nagivation_mode_override_left",
+        "focus_nagivation_mode_right": "$focus_nagivation_mode_override_right",
+        "controls": [
+            {
+                "control": {
+                    "type": "stack_panel",
+                    "size": [
+                        "100%",
+                        "100%"
+                    ],
+                    "anchor_from": "top_right",
+                    "anchor_to": "top_right",
+                    "controls": [
+                        {
+                            "header_panel": {
+                                "type": "panel",
+                                "layer": 20,
+                                "size": [
+                                    "100%",
+                                    "100%c"
+                                ],
+                                "anchor_from": "top_left",
+                                "anchor_to": "top_left",
+                                "controls": [
+                                    {
+                                        "content@$section_header_panels": {}
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "scrolling_panel@common.scrolling_panel": {
+                                "size": [
+                                    "100%",
+                                    "fill"
+                                ],
+                                "$scrolling_content": "$section_content_panels",
+                                "$show_background": false,
+                                "$scroll_size": [
+                                    "5px",
+                                    "100% - 4px"
+                                ],
+                                "$scroll_bar_left_padding_size": [
+                                    1,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "footer_panel": {
+                                "type": "panel",
+                                "layer": 20,
+                                "size": [
+                                    "100%",
+                                    "100%c"
+                                ],
+                                "anchor_from": "bottom_left",
+                                "anchor_to": "bottom_left",
+                                "controls": [
+                                    {
+                                        "content@$section_footer_panels": {}
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "section_divider": {
+        "type": "image",
+        "offset": [
+            "30% + 2px",
+            0
+        ],
+        "size": [
+            4,
+            "100%-2px"
+        ],
+        "alpha": 0.3,
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "layer": 3,
+        "texture": "textures/ui/screen_background"
+    },
+    "screen_base@settings_common.dynamic_dialog_screen": {
+        "$dialog_content": "settings_common.dialog_content"
+    }
+}

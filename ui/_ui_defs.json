@@ -1,0 +1,60 @@
+{
+    "ui_defs": [
+        //Mod Menu 
+        ".light/mod_menu/light_categories.json",
+        ".light/mod_menu/light_mods_panel.json",
+        ".light/mod_menu/light_mod_menu.json",
+        /*Mod Menu Tabs*/   
+        ".light/mod_menu/tabs/general_tab.json",
+        ".light/mod_menu/tabs/crosshair_tab.json",       
+        ".light/mod_menu/tabs/info_tab.json",
+        ".light/mod_menu/tabs/elements_tab.json",
+        ".light/mod_menu/tabs/settings_tab.json",
+        /*Mod Menu Mods*/
+        ".light/mod_menu/mods/light_mainhand_hud.json",
+        ".light/mod_menu/mods/light_entity_mods.json",
+        ".light/mod_menu/mods/light_ui_mods.json",
+        ".light/mod_menu/mods/light_debug_screen.json",
+        ".light/mod_menu/mods/light_ip_display.json",
+        ".light/mod_menu/mods/light_player_list.json",
+        ".light/mod_menu/mods/light_crosshair.json",
+        
+        //Common
+        ".light/common/light_bg.json",
+        /*Buttons*/
+        ".light/common/buttons/light_chat_buttons.json",
+        ".light/common/buttons/light_toggle.json",
+        ".light/common/buttons/light_buttons.json",
+        ".light/common/buttons/light_checkmarks.json",        
+        ".light/common/buttons/light_image_buttons.json",
+        /*Templates*/
+        ".light/common/templates/light_slider.json",
+        ".light/common/templates/light_header.json",
+        ".light/common/templates/light_percent_template.json",
+        ".light/common/templates/light_bg.json",
+        ".light/common/templates/light_hover_text.json",        
+        
+        //Screens
+        ".light/screens/pause/light_pause.json",
+        ".light/screens/progress/light_progress.json",
+        ".light/screens/progress/light_progress_percentage.json",
+        ".light/screens/light_effect_timer.json",
+        ".light/screens/light_command_block.json",
+        ".light/screens/inventory/crafting_panel.json",
+        /*Container*/
+        ".light/screens/container/light_container_common.json",
+        /*Start*/
+        ".light/screens/start_screen/light_start_content.json",
+        ".light/screens/start_screen/light_start_screen.json",
+        ".light/screens/start_screen/light_start_extra.json",
+        /*Play*/
+        ".light/screens/play/light_play_content.json",
+        ".light/screens/play/light_play_screen.json",
+        ".light/screens/play/light_play_extra.json",
+        
+        //Extras
+        "config.txt"
+    ]
+    /* // = it's a category */
+    /* /* = it's a category of a category */ 
+}

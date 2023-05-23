@@ -1,0 +1,1 @@
+{"mob_effect_screen":{"close_on_player_hurt":false,"should_steal_mouse":true,"is_modal":false,"always_accepts_input":false,"absorbs_input":false,"is_showing_menu":false,"low_frequency_rendering":true,"render_only_when_topmost":false,"render_game_behind":true,"force_render_below":true,"$screen_animations":[],"$screen_content":"light_effects.main_screen"}}
