@@ -1,1 +1,516 @@
-{"namespace":"light_crosshair","cross_hud":{"type":"panel","size":[16,16],"controls":[{"1":{"type":"image","texture":".light/textures/crosshairs/1","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.1","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"2":{"type":"image","texture":".light/textures/crosshairs/2","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.2","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"3":{"type":"image","texture":".light/textures/crosshairs/3","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.3","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"4":{"type":"image","texture":".light/textures/crosshairs/4","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.4","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"5":{"type":"image","texture":".light/textures/crosshairs/5","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.5","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"6":{"type":"image","texture":".light/textures/crosshairs/6","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.6","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"7":{"type":"image","texture":".light/textures/crosshairs/7","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.7","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"8":{"type":"image","texture":".light/textures/crosshairs/8","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.8","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"9":{"type":"image","texture":".light/textures/crosshairs/9","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.9","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"10":{"type":"image","texture":".light/textures/crosshairs/10","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.10","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"11":{"type":"image","texture":".light/textures/crosshairs/11","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.11","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"12":{"type":"image","texture":".light/textures/crosshairs/12","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.12","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"13":{"type":"image","texture":".light/textures/crosshairs/13","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.13","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"14":{"type":"image","texture":".light/textures/crosshairs/14","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.14","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"15":{"type":"image","texture":".light/textures/crosshairs/15","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.15","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"16":{"type":"image","texture":".light/textures/crosshairs/16","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.16","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"17":{"type":"image","texture":".light/textures/crosshairs/17","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.17","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"18":{"type":"image","texture":".light/textures/crosshairs/18","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.18","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"19":{"type":"image","texture":".light/textures/crosshairs/19","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.19","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"20":{"type":"image","texture":".light/textures/crosshairs/20","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.20","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"21":{"type":"image","texture":".light/textures/crosshairs/21","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.21","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"22":{"type":"image","texture":".light/textures/crosshairs/22","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.22","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"23":{"type":"image","texture":".light/textures/crosshairs/23","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.23","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"24":{"type":"image","texture":".light/textures/crosshairs/24","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.24","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"25":{"type":"image","texture":".light/textures/crosshairs/25","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.25","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"26":{"type":"image","texture":".light/textures/crosshairs/26","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.26","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"27":{"type":"image","texture":".light/textures/crosshairs/27","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.27","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"28":{"type":"image","texture":".light/textures/crosshairs/28","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.28","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"29":{"type":"image","texture":".light/textures/crosshairs/29","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.29","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"30":{"type":"image","texture":".light/textures/crosshairs/30","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.30","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"31":{"type":"image","texture":".light/textures/crosshairs/31","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.31","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"32":{"type":"image","texture":".light/textures/crosshairs/32","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.32","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"33":{"type":"image","texture":".light/textures/crosshairs/33","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.33","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"34":{"type":"image","texture":".light/textures/crosshairs/34","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.34","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"35":{"type":"image","texture":".light/textures/crosshairs/35","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.35","source_property_name":"#toggle_state","target_property_name":"#visible"}]}},{"36":{"type":"image","texture":".light/textures/crosshairs/36","bindings":[{"binding_type":"view","source_control_name":"ch.toggle.36","source_property_name":"#toggle_state","target_property_name":"#visible"}]}}]}}
+{
+  "namespace": "light_crosshair",
+  "cross_hud": {
+    "type": "panel",
+    "size": [
+      16,
+      16
+    ],
+    "controls": [
+      {
+        "1": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/1",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.1",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "2": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/2",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.2",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "3": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/3",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.3",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "4": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/4",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.4",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "5": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/5",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.5",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "6": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/6",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.6",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "7": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/7",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.7",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "8": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/8",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.8",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "9": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/9",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.9",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "10": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/10",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.10",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "11": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/11",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.11",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "12": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/12",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.12",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "13": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/13",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.13",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "14": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/14",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.14",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "15": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/15",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.15",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "16": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/16",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.16",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "17": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/17",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.17",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "18": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/18",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.18",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "19": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/19",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.19",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "20": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/20",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.20",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "21": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/21",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.21",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "22": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/22",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.22",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "23": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/23",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.23",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "24": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/24",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.24",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "25": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/25",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.25",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "26": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/26",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.26",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "27": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/27",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.27",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "28": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/28",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.28",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "29": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/29",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.29",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "30": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/30",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.30",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "31": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/31",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.31",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "32": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/32",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.32",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "33": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/33",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.33",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "34": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/34",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.34",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "35": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/35",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.35",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "36": {
+          "type": "image",
+          "texture": ".light/textures/crosshairs/36",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "ch.toggle.36",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
