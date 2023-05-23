@@ -1,1 +1,995 @@
-{"namespace":"light_mainhand_hud","mainhand_hud":{"type":"stack_panel","anchor_from":"bottom_middle","anchor_to":"bottom_middle","offset":[110.5,-5.5],"size":[18,18],"bindings":[{"binding_type":"view","source_control_name":"mainhand_slot","source_property_name":"#toggle_state","target_property_name":"#visible"}],"collection_name":"hotbar_items","controls":[{"@mainhand_slot":{"collection_index":0}},{"@mainhand_slot":{"collection_index":1}},{"@mainhand_slot":{"collection_index":2}},{"@mainhand_slot":{"collection_index":3}},{"@mainhand_slot":{"collection_index":4}},{"@mainhand_slot":{"collection_index":5}},{"@mainhand_slot":{"collection_index":6}},{"@mainhand_slot":{"collection_index":7}},{"@mainhand_slot":{"collection_index":8}},{"@mainhand_slot":{"collection_index":9}}]},"mainhand_slot":{"type":"panel","size":[22,22],"bindings":[{"binding_name":"#slot_selected","binding_name_override":"#visible","binding_type":"collection","binding_collection_name":"hotbar_items"}],"$hotbar_collection_name":"hotbar_items","controls":[{"pot":{"type":"image","texture":".light/textures/mods/shiny_pots","layer":1,"size":[16,16],"alpha":0.35,"offset":[0,0],"bindings":[{"binding_name":"#item_id_aux","binding_type":"collection","binding_collection_name":"hotbar_items"},{"binding_type":"view","source_property_name":"((#item_id_aux = 27918341) or ((#item_id_aux > 27918341) and (#item_id_aux < 27918379)))","target_property_name":"#visible"}]}},{"pot2":{"type":"image","texture":".light/textures/mods/shiny_pots","layer":1,"size":[16,16],"alpha":0.35,"offset":[0,0],"bindings":[{"binding_name":"#item_id_aux","binding_type":"collection","binding_collection_name":"hotbar_items"},{"binding_type":"view","source_property_name":"(((#item_id_aux > 36765698) and (#item_id_aux < 36765739)) or ((#item_id_aux > 36831234) and (#item_id_aux < 36831275)))","target_property_name":"#visible"}]}},{"item_icon@hotbar_hud_item_icon":{"layer":3,"size":[16,16]}},{"durability@item_durability":{"layer":5}},{"durability_text@durabilty_text":{"bindings":[{"binding_name":"#item_durability_total_amount","binding_type":"collection","binding_collection_name":"hotbar_items"}]}},{"item_background":{"type":"image","size":[22,22],"layer":0,"texture":".light/textures/mods/slot","bindings":[{"binding_name":"(not (#item_id_aux = -1))","binding_name_override":"#visible","binding_type":"collection","binding_collection_name":"hotbar_items"}]}},{"stack_count_label":{"type":"label","offset":[-1,0],"anchor_to":"bottom_right","anchor_from":"bottom_right","layer":7,"shadow":true,"text":"#inventory_stack_count","bindings":[{"binding_name":"#inventory_stack_count","binding_type":"collection","binding_collection_name":"hotbar_items"},{"binding_name":"none","binding_name_override":"#visible","binding_type":"collection","binding_collection_name":"hotbar_items"}]}},{"cooldown_renderer":{"type":"custom","renderer":"hotbar_cooldown_renderer","size":[18,20],"layer":10,"bindings":[{"binding_collection_name":"hotbar_items","binding_type":"collection_details"}]}},{"container_item_lock_overlay":{"type":"panel","size":[18,18],"controls":[{"container_item_lock_yellow@common.container_item_lock_yellow":{"bindings":[{"binding_name":"#item_lock_in_inventory","binding_name_override":"#visible","binding_type":"collection","binding_collection_name":"hotbar_items"}]}},{"container_item_lock_red@common.container_item_lock_red":{"bindings":[{"binding_name":"#item_lock_in_slot","binding_name_override":"#visible","binding_type":"collection","binding_collection_name":"hotbar_items"}]}}]}},{"item_icon":{"type":"custom","renderer":"inventory_item_renderer","layer":1,"size":[16,16],"property_bag":{"force_update":true},"bindings":[{"binding_name":"#item_id_aux","binding_type":"collection","binding_collection_name":"hotbar_items"},{"binding_name":"#charged_item","binding_type":"collection","binding_collection_name":"hotbar_items"},{"binding_name":"#item_custom_color","binding_type":"collection","binding_collection_name":"hotbar_items"},{"binding_name":"#banner_patterns","binding_condition":"visible","binding_type":"collection","binding_collection_name":"hotbar_items"},{"binding_name":"#banner_colors","binding_condition":"visible","binding_type":"collection","binding_collection_name":"hotbar_items"},{"binding_name":"#banner_type","binding_condition":"visible","binding_type":"collection","binding_collection_name":"hotbar_items"},{"binding_type":"collection","binding_name":"#show_item","binding_name_override":"#visible","binding_collection_name":"hotbar_items"},{"binding_name":"#inactive_item","binding_type":"collection","binding_collection_name":"hotbar_items","binding_name_override":"#disabled_filter_visible"},{"binding_name":"#shield_is_active","binding_type":"collection","binding_collection_name":"hotbar_items"},{"binding_name":"#item_lodestone_tracking_handle","binding_condition":"visible","binding_type":"collection","binding_collection_name":"hotbar_items"}]}}]},"durabilty_text":{"type":"panel","bindings":[{"binding_type":"view","source_control_name":"mainhand_durability","source_property_name":"#toggle_state","target_property_name":"#visible"}],"controls":[{"100_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"100%%","$durability_percentage":100}},{"99_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"99%%","$durability_percentage":99}},{"98_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"98%%","$durability_percentage":98}},{"97_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"97%%","$durability_percentage":97}},{"96_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"96%%","$durability_percentage":96}},{"95_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"95%%","$durability_percentage":95}},{"94_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"94%%","$durability_percentage":94}},{"93_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"93%%","$durability_percentage":93}},{"92_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"92%%","$durability_percentage":92}},{"91_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"91%%","$durability_percentage":91}},{"90_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"90%%","$durability_percentage":90}},{"89_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"89%%","$durability_percentage":89}},{"88_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"88%%","$durability_percentage":88}},{"87_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"87%%","$durability_percentage":87}},{"86_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"86%%","$durability_percentage":86}},{"85_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"85%%","$durability_percentage":85}},{"84_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"84%%","$durability_percentage":84}},{"83_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"83%%","$durability_percentage":83}},{"82_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"82%%","$durability_percentage":82}},{"81_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"81%%","$durability_percentage":81}},{"80_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"80%%","$durability_percentage":80}},{"79_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"79%%","$durability_percentage":79}},{"78_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"78%%","$durability_percentage":78}},{"77_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"77%%","$durability_percentage":77}},{"76_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"76%%","$durability_percentage":76}},{"75_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"75%%","$durability_percentage":75}},{"74_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e74%%","$durability_percentage":74}},{"73_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e73%%","$durability_percentage":73}},{"72_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e72%%","$durability_percentage":72}},{"71_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e71%%","$durability_percentage":71}},{"70_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e70%%","$durability_percentage":70}},{"69_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e69%%","$durability_percentage":69}},{"68_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e68%%","$durability_percentage":68}},{"67_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e67%%","$durability_percentage":67}},{"66_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e66%%","$durability_percentage":66}},{"65_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e65%%","$durability_percentage":65}},{"64_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e64%%","$durability_percentage":64}},{"63_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e63%%","$durability_percentage":63}},{"62_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e62%%","$durability_percentage":62}},{"61_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e61%%","$durability_percentage":61}},{"60_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e60%%","$durability_percentage":60}},{"59_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e59%%","$durability_percentage":59}},{"58_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e58%%","$durability_percentage":58}},{"57_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e57%%","$durability_percentage":57}},{"56_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e56%%","$durability_percentage":56}},{"55_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e55%%","$durability_percentage":55}},{"54_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e54%%","$durability_percentage":54}},{"53_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e53%%","$durability_percentage":53}},{"52_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e52%%","$durability_percentage":52}},{"51_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e51%%","$durability_percentage":51}},{"50_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§e50%%","$durability_percentage":50}},{"49_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§649%%","$durability_percentage":49}},{"48_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§648%%","$durability_percentage":48}},{"47_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§647%%","$durability_percentage":47}},{"46_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§646%%","$durability_percentage":46}},{"45_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§645%%","$durability_percentage":45}},{"44_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§644%%","$durability_percentage":44}},{"43_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§643%%","$durability_percentage":43}},{"42_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§642%%","$durability_percentage":42}},{"41_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§641%%","$durability_percentage":41}},{"40_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§640%%","$durability_percentage":40}},{"39_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§639%%","$durability_percentage":39}},{"38_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§638%%","$durability_percentage":38}},{"37_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§637%%","$durability_percentage":37}},{"36_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§636%%","$durability_percentage":36}},{"35_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§635%%","$durability_percentage":35}},{"34_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§634%%","$durability_percentage":34}},{"33_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§633%%","$durability_percentage":33}},{"32_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§632%%","$durability_percentage":32}},{"31_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§631%%","$durability_percentage":31}},{"30_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§630%%","$durability_percentage":30}},{"29_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§629%%","$durability_percentage":29}},{"28_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§628%%","$durability_percentage":28}},{"27_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§627%%","$durability_percentage":27}},{"26_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§626%%","$durability_percentage":26}},{"25_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§625%%","$durability_percentage":25}},{"24_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§c24%%","$durability_percentage":24}},{"23_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§c23%%","$durability_percentage":23}},{"22_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§c22%%","$durability_percentage":22}},{"21_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§c21%%","$durability_percentage":21}},{"20_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§c20%%","$durability_percentage":20}},{"19_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§c19%%","$durability_percentage":19}},{"18_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§c18%%","$durability_percentage":18}},{"17_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§c17%%","$durability_percentage":17}},{"16_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§c16%%","$durability_percentage":16}},{"15_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§c15%%","$durability_percentage":15}},{"14_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§c14%%","$durability_percentage":14}},{"13_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§c13%%","$durability_percentage":13}},{"12_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§c12%%","$durability_percentage":12}},{"11_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§c11%%","$durability_percentage":11}},{"10_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§c10%%","$durability_percentage":10}},{"9_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§49%%","$durability_percentage":9}},{"8_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§48%%","$durability_percentage":8}},{"7_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§47%%","$durability_percentage":7}},{"6_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§46%%","$durability_percentage":6}},{"5_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§45%%","$durability_percentage":5}},{"4_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§44%%","$durability_percentage":4}},{"3_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§43%%","$durability_percentage":3}},{"2_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§42%%","$durability_percentage":2}},{"1_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"§41%%","$durability_percentage":1}},{"0_percent@light_mainhand_hud.durability_text_template":{"$durability_percentage_text":"","$durability_percentage":0}}]},"durability_text_template":{"type":"label","text":"('§a' + $durability_percentage_text)","$durability_percentage|default":"","offset":"$text_offset","$text_offset|default":[0,-16],"anchor_from":"center","anchor_to":"center","shadow":true,"bindings":[{"binding_name":"#item_durability_current_amount","binding_type":"collection","binding_collection_name":"hotbar_items"},{"binding_name":"#item_durability_total_amount","binding_type":"collection","binding_collection_name":"hotbar_items"},{"binding_type":"view","source_property_name":"((#item_durability_current_amount / #item_durability_total_amount * 100 < $durability_percentage and #item_durability_current_amount / #item_durability_total_amount * 100 > ($durability_percentage - 1)) or (#item_durability_current_amount / #item_durability_total_amount * 100 = $durability_percentage))","target_property_name":"#visible"}]}}
+{
+  "namespace": "light_mainhand_hud",
+  "mainhand_hud": {
+    "type": "stack_panel",
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "offset": [
+      110.5,
+      -5.5
+    ],
+    "size": [
+      18,
+      18
+    ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "mainhand_slot",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "collection_name": "hotbar_items",
+    "controls": [
+      {
+        "@mainhand_slot": {
+          "collection_index": 0
+        }
+      },
+      {
+        "@mainhand_slot": {
+          "collection_index": 1
+        }
+      },
+      {
+        "@mainhand_slot": {
+          "collection_index": 2
+        }
+      },
+      {
+        "@mainhand_slot": {
+          "collection_index": 3
+        }
+      },
+      {
+        "@mainhand_slot": {
+          "collection_index": 4
+        }
+      },
+      {
+        "@mainhand_slot": {
+          "collection_index": 5
+        }
+      },
+      {
+        "@mainhand_slot": {
+          "collection_index": 6
+        }
+      },
+      {
+        "@mainhand_slot": {
+          "collection_index": 7
+        }
+      },
+      {
+        "@mainhand_slot": {
+          "collection_index": 8
+        }
+      },
+      {
+        "@mainhand_slot": {
+          "collection_index": 9
+        }
+      }
+    ]
+  },
+  "mainhand_slot": {
+    "type": "panel",
+    "size": [
+      22,
+      22
+    ],
+    "bindings": [
+      {
+        "binding_name": "#slot_selected",
+        "binding_name_override": "#visible",
+        "binding_type": "collection",
+        "binding_collection_name": "hotbar_items"
+      }
+    ],
+    "$hotbar_collection_name": "hotbar_items",
+    "controls": [
+      {
+        "pot": {
+          "type": "image",
+          "texture": ".light/textures/mods/shiny_pots",
+          "layer": 1,
+          "size": [
+            16,
+            16
+          ],
+          "alpha": 0.35,
+          "offset": [
+            0,
+            0
+          ],
+          "bindings": [
+            {
+              "binding_name": "#item_id_aux",
+              "binding_type": "collection",
+              "binding_collection_name": "hotbar_items"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "((#item_id_aux = 27918341) or ((#item_id_aux > 27918341) and (#item_id_aux < 27918379)))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "pot2": {
+          "type": "image",
+          "texture": ".light/textures/mods/shiny_pots",
+          "layer": 1,
+          "size": [
+            16,
+            16
+          ],
+          "alpha": 0.35,
+          "offset": [
+            0,
+            0
+          ],
+          "bindings": [
+            {
+              "binding_name": "#item_id_aux",
+              "binding_type": "collection",
+              "binding_collection_name": "hotbar_items"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(((#item_id_aux > 36765698) and (#item_id_aux < 36765739)) or ((#item_id_aux > 36831234) and (#item_id_aux < 36831275)))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "item_icon@hotbar_hud_item_icon": {
+          "layer": 3,
+          "size": [
+            16,
+            16
+          ]
+        }
+      },
+      {
+        "durability@item_durability": {
+          "layer": 5
+        }
+      },
+      {
+        "durability_text@durabilty_text": {
+          "bindings": [
+            {
+              "binding_name": "#item_durability_total_amount",
+              "binding_type": "collection",
+              "binding_collection_name": "hotbar_items"
+            }
+          ]
+        }
+      },
+      {
+        "item_background": {
+          "type": "image",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 0,
+          "texture": ".light/textures/mods/slot",
+          "bindings": [
+            {
+              "binding_name": "(not (#item_id_aux = -1))",
+              "binding_name_override": "#visible",
+              "binding_type": "collection",
+              "binding_collection_name": "hotbar_items"
+            }
+          ]
+        }
+      },
+      {
+        "stack_count_label": {
+          "type": "label",
+          "offset": [
+            -1,
+            0
+          ],
+          "anchor_to": "bottom_right",
+          "anchor_from": "bottom_right",
+          "layer": 7,
+          "shadow": true,
+          "text": "#inventory_stack_count",
+          "bindings": [
+            {
+              "binding_name": "#inventory_stack_count",
+              "binding_type": "collection",
+              "binding_collection_name": "hotbar_items"
+            },
+            {
+              "binding_name": "none",
+              "binding_name_override": "#visible",
+              "binding_type": "collection",
+              "binding_collection_name": "hotbar_items"
+            }
+          ]
+        }
+      },
+      {
+        "cooldown_renderer": {
+          "type": "custom",
+          "renderer": "hotbar_cooldown_renderer",
+          "size": [
+            18,
+            20
+          ],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_collection_name": "hotbar_items",
+              "binding_type": "collection_details"
+            }
+          ]
+        }
+      },
+      {
+        "container_item_lock_overlay": {
+          "type": "panel",
+          "size": [
+            18,
+            18
+          ],
+          "controls": [
+            {
+              "container_item_lock_yellow@common.container_item_lock_yellow": {
+                "bindings": [
+                  {
+                    "binding_name": "#item_lock_in_inventory",
+                    "binding_name_override": "#visible",
+                    "binding_type": "collection",
+                    "binding_collection_name": "hotbar_items"
+                  }
+                ]
+              }
+            },
+            {
+              "container_item_lock_red@common.container_item_lock_red": {
+                "bindings": [
+                  {
+                    "binding_name": "#item_lock_in_slot",
+                    "binding_name_override": "#visible",
+                    "binding_type": "collection",
+                    "binding_collection_name": "hotbar_items"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "item_icon": {
+          "type": "custom",
+          "renderer": "inventory_item_renderer",
+          "layer": 1,
+          "size": [
+            16,
+            16
+          ],
+          "property_bag": {
+            "force_update": true
+          },
+          "bindings": [
+            {
+              "binding_name": "#item_id_aux",
+              "binding_type": "collection",
+              "binding_collection_name": "hotbar_items"
+            },
+            {
+              "binding_name": "#charged_item",
+              "binding_type": "collection",
+              "binding_collection_name": "hotbar_items"
+            },
+            {
+              "binding_name": "#item_custom_color",
+              "binding_type": "collection",
+              "binding_collection_name": "hotbar_items"
+            },
+            {
+              "binding_name": "#banner_patterns",
+              "binding_condition": "visible",
+              "binding_type": "collection",
+              "binding_collection_name": "hotbar_items"
+            },
+            {
+              "binding_name": "#banner_colors",
+              "binding_condition": "visible",
+              "binding_type": "collection",
+              "binding_collection_name": "hotbar_items"
+            },
+            {
+              "binding_name": "#banner_type",
+              "binding_condition": "visible",
+              "binding_type": "collection",
+              "binding_collection_name": "hotbar_items"
+            },
+            {
+              "binding_type": "collection",
+              "binding_name": "#show_item",
+              "binding_name_override": "#visible",
+              "binding_collection_name": "hotbar_items"
+            },
+            {
+              "binding_name": "#inactive_item",
+              "binding_type": "collection",
+              "binding_collection_name": "hotbar_items",
+              "binding_name_override": "#disabled_filter_visible"
+            },
+            {
+              "binding_name": "#shield_is_active",
+              "binding_type": "collection",
+              "binding_collection_name": "hotbar_items"
+            },
+            {
+              "binding_name": "#item_lodestone_tracking_handle",
+              "binding_condition": "visible",
+              "binding_type": "collection",
+              "binding_collection_name": "hotbar_items"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "durabilty_text": {
+    "type": "panel",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "mainhand_durability",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "100_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "100%%",
+          "$durability_percentage": 100
+        }
+      },
+      {
+        "99_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "99%%",
+          "$durability_percentage": 99
+        }
+      },
+      {
+        "98_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "98%%",
+          "$durability_percentage": 98
+        }
+      },
+      {
+        "97_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "97%%",
+          "$durability_percentage": 97
+        }
+      },
+      {
+        "96_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "96%%",
+          "$durability_percentage": 96
+        }
+      },
+      {
+        "95_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "95%%",
+          "$durability_percentage": 95
+        }
+      },
+      {
+        "94_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "94%%",
+          "$durability_percentage": 94
+        }
+      },
+      {
+        "93_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "93%%",
+          "$durability_percentage": 93
+        }
+      },
+      {
+        "92_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "92%%",
+          "$durability_percentage": 92
+        }
+      },
+      {
+        "91_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "91%%",
+          "$durability_percentage": 91
+        }
+      },
+      {
+        "90_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "90%%",
+          "$durability_percentage": 90
+        }
+      },
+      {
+        "89_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "89%%",
+          "$durability_percentage": 89
+        }
+      },
+      {
+        "88_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "88%%",
+          "$durability_percentage": 88
+        }
+      },
+      {
+        "87_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "87%%",
+          "$durability_percentage": 87
+        }
+      },
+      {
+        "86_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "86%%",
+          "$durability_percentage": 86
+        }
+      },
+      {
+        "85_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "85%%",
+          "$durability_percentage": 85
+        }
+      },
+      {
+        "84_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "84%%",
+          "$durability_percentage": 84
+        }
+      },
+      {
+        "83_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "83%%",
+          "$durability_percentage": 83
+        }
+      },
+      {
+        "82_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "82%%",
+          "$durability_percentage": 82
+        }
+      },
+      {
+        "81_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "81%%",
+          "$durability_percentage": 81
+        }
+      },
+      {
+        "80_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "80%%",
+          "$durability_percentage": 80
+        }
+      },
+      {
+        "79_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "79%%",
+          "$durability_percentage": 79
+        }
+      },
+      {
+        "78_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "78%%",
+          "$durability_percentage": 78
+        }
+      },
+      {
+        "77_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "77%%",
+          "$durability_percentage": 77
+        }
+      },
+      {
+        "76_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "76%%",
+          "$durability_percentage": 76
+        }
+      },
+      {
+        "75_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "75%%",
+          "$durability_percentage": 75
+        }
+      },
+      {
+        "74_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e74%%",
+          "$durability_percentage": 74
+        }
+      },
+      {
+        "73_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e73%%",
+          "$durability_percentage": 73
+        }
+      },
+      {
+        "72_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e72%%",
+          "$durability_percentage": 72
+        }
+      },
+      {
+        "71_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e71%%",
+          "$durability_percentage": 71
+        }
+      },
+      {
+        "70_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e70%%",
+          "$durability_percentage": 70
+        }
+      },
+      {
+        "69_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e69%%",
+          "$durability_percentage": 69
+        }
+      },
+      {
+        "68_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e68%%",
+          "$durability_percentage": 68
+        }
+      },
+      {
+        "67_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e67%%",
+          "$durability_percentage": 67
+        }
+      },
+      {
+        "66_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e66%%",
+          "$durability_percentage": 66
+        }
+      },
+      {
+        "65_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e65%%",
+          "$durability_percentage": 65
+        }
+      },
+      {
+        "64_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e64%%",
+          "$durability_percentage": 64
+        }
+      },
+      {
+        "63_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e63%%",
+          "$durability_percentage": 63
+        }
+      },
+      {
+        "62_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e62%%",
+          "$durability_percentage": 62
+        }
+      },
+      {
+        "61_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e61%%",
+          "$durability_percentage": 61
+        }
+      },
+      {
+        "60_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e60%%",
+          "$durability_percentage": 60
+        }
+      },
+      {
+        "59_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e59%%",
+          "$durability_percentage": 59
+        }
+      },
+      {
+        "58_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e58%%",
+          "$durability_percentage": 58
+        }
+      },
+      {
+        "57_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e57%%",
+          "$durability_percentage": 57
+        }
+      },
+      {
+        "56_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e56%%",
+          "$durability_percentage": 56
+        }
+      },
+      {
+        "55_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e55%%",
+          "$durability_percentage": 55
+        }
+      },
+      {
+        "54_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e54%%",
+          "$durability_percentage": 54
+        }
+      },
+      {
+        "53_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e53%%",
+          "$durability_percentage": 53
+        }
+      },
+      {
+        "52_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e52%%",
+          "$durability_percentage": 52
+        }
+      },
+      {
+        "51_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e51%%",
+          "$durability_percentage": 51
+        }
+      },
+      {
+        "50_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§e50%%",
+          "$durability_percentage": 50
+        }
+      },
+      {
+        "49_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§649%%",
+          "$durability_percentage": 49
+        }
+      },
+      {
+        "48_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§648%%",
+          "$durability_percentage": 48
+        }
+      },
+      {
+        "47_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§647%%",
+          "$durability_percentage": 47
+        }
+      },
+      {
+        "46_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§646%%",
+          "$durability_percentage": 46
+        }
+      },
+      {
+        "45_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§645%%",
+          "$durability_percentage": 45
+        }
+      },
+      {
+        "44_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§644%%",
+          "$durability_percentage": 44
+        }
+      },
+      {
+        "43_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§643%%",
+          "$durability_percentage": 43
+        }
+      },
+      {
+        "42_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§642%%",
+          "$durability_percentage": 42
+        }
+      },
+      {
+        "41_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§641%%",
+          "$durability_percentage": 41
+        }
+      },
+      {
+        "40_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§640%%",
+          "$durability_percentage": 40
+        }
+      },
+      {
+        "39_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§639%%",
+          "$durability_percentage": 39
+        }
+      },
+      {
+        "38_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§638%%",
+          "$durability_percentage": 38
+        }
+      },
+      {
+        "37_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§637%%",
+          "$durability_percentage": 37
+        }
+      },
+      {
+        "36_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§636%%",
+          "$durability_percentage": 36
+        }
+      },
+      {
+        "35_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§635%%",
+          "$durability_percentage": 35
+        }
+      },
+      {
+        "34_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§634%%",
+          "$durability_percentage": 34
+        }
+      },
+      {
+        "33_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§633%%",
+          "$durability_percentage": 33
+        }
+      },
+      {
+        "32_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§632%%",
+          "$durability_percentage": 32
+        }
+      },
+      {
+        "31_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§631%%",
+          "$durability_percentage": 31
+        }
+      },
+      {
+        "30_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§630%%",
+          "$durability_percentage": 30
+        }
+      },
+      {
+        "29_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§629%%",
+          "$durability_percentage": 29
+        }
+      },
+      {
+        "28_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§628%%",
+          "$durability_percentage": 28
+        }
+      },
+      {
+        "27_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§627%%",
+          "$durability_percentage": 27
+        }
+      },
+      {
+        "26_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§626%%",
+          "$durability_percentage": 26
+        }
+      },
+      {
+        "25_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§625%%",
+          "$durability_percentage": 25
+        }
+      },
+      {
+        "24_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§c24%%",
+          "$durability_percentage": 24
+        }
+      },
+      {
+        "23_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§c23%%",
+          "$durability_percentage": 23
+        }
+      },
+      {
+        "22_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§c22%%",
+          "$durability_percentage": 22
+        }
+      },
+      {
+        "21_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§c21%%",
+          "$durability_percentage": 21
+        }
+      },
+      {
+        "20_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§c20%%",
+          "$durability_percentage": 20
+        }
+      },
+      {
+        "19_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§c19%%",
+          "$durability_percentage": 19
+        }
+      },
+      {
+        "18_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§c18%%",
+          "$durability_percentage": 18
+        }
+      },
+      {
+        "17_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§c17%%",
+          "$durability_percentage": 17
+        }
+      },
+      {
+        "16_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§c16%%",
+          "$durability_percentage": 16
+        }
+      },
+      {
+        "15_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§c15%%",
+          "$durability_percentage": 15
+        }
+      },
+      {
+        "14_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§c14%%",
+          "$durability_percentage": 14
+        }
+      },
+      {
+        "13_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§c13%%",
+          "$durability_percentage": 13
+        }
+      },
+      {
+        "12_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§c12%%",
+          "$durability_percentage": 12
+        }
+      },
+      {
+        "11_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§c11%%",
+          "$durability_percentage": 11
+        }
+      },
+      {
+        "10_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§c10%%",
+          "$durability_percentage": 10
+        }
+      },
+      {
+        "9_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§49%%",
+          "$durability_percentage": 9
+        }
+      },
+      {
+        "8_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§48%%",
+          "$durability_percentage": 8
+        }
+      },
+      {
+        "7_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§47%%",
+          "$durability_percentage": 7
+        }
+      },
+      {
+        "6_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§46%%",
+          "$durability_percentage": 6
+        }
+      },
+      {
+        "5_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§45%%",
+          "$durability_percentage": 5
+        }
+      },
+      {
+        "4_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§44%%",
+          "$durability_percentage": 4
+        }
+      },
+      {
+        "3_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§43%%",
+          "$durability_percentage": 3
+        }
+      },
+      {
+        "2_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§42%%",
+          "$durability_percentage": 2
+        }
+      },
+      {
+        "1_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "§41%%",
+          "$durability_percentage": 1
+        }
+      },
+      {
+        "0_percent@light_mainhand_hud.durability_text_template": {
+          "$durability_percentage_text": "",
+          "$durability_percentage": 0
+        }
+      }
+    ]
+  },
+  "durability_text_template": {
+    "type": "label",
+    "text": "('§a' + $durability_percentage_text)",
+    "$durability_percentage|default": "",
+    "offset": "$text_offset",
+    "$text_offset|default": [
+      0,
+      -16
+    ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "shadow": true,
+    "bindings": [
+      {
+        "binding_name": "#item_durability_current_amount",
+        "binding_type": "collection",
+        "binding_collection_name": "hotbar_items"
+      },
+      {
+        "binding_name": "#item_durability_total_amount",
+        "binding_type": "collection",
+        "binding_collection_name": "hotbar_items"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "((#item_durability_current_amount / #item_durability_total_amount * 100 < $durability_percentage and #item_durability_current_amount / #item_durability_total_amount * 100 > ($durability_percentage - 1)) or (#item_durability_current_amount / #item_durability_total_amount * 100 = $durability_percentage))",
+        "target_property_name": "#visible"
+      }
+    ]
+  }
+}
