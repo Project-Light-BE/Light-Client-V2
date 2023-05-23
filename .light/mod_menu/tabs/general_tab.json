@@ -1,0 +1,277 @@
+{
+    "namespace": "light_mod_menu",
+    "general_tab": {
+        "type": "panel",
+        "size": [
+            "100%",
+            "100%c"
+        ],
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "mods_tab",
+                "source_property_name": "#toggle_state",
+                "target_property_name": "#visible"
+            }
+        ],
+        "$label_offset": [
+            10,
+            0
+        ],
+        "controls": [
+            {
+                "armorhud@common_toggles.mod_toggles": {
+                    "$toggle_tags": "$armor_hud",
+                    "$toggle_view_binding_name": "armor_hud",
+                    "$button_text": "Armorhud",
+                    "$hover_text": "Armorhud",
+                    "$button_icon": ".light/textures/icons/armor_hud",
+                    "layer": 40,
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "$label_offset": [
+                        5,
+                        0
+                    ],
+                    "$icon_offset": [
+                        0,
+                        2
+                    ],
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        15,
+                        -30
+                    ]
+                }
+            },
+            {
+                "directionhud@common_toggles.mod_toggles": {
+                    "$toggle_tags": "$direction_hud",
+                    "$toggle_view_binding_name": "direction_hud_mod",
+                    "$button_text": "Directionhud",
+                    "$button_icon": ".light/textures/icons/direction_hud",
+                    "layer": 40,
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        15,
+                        0
+                    ]
+                }
+            },
+            {
+                "offhand@common_toggles.mod_toggles": {
+                    "$toggle_tags": "$offhand_hud",
+                    "$toggle_view_binding_name": "offhand_hud",
+                    "$button_text": "Offhandhud",
+                    "$button_icon": ".light/textures/icons/offhand_hud",
+                    "layer": 40,
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        15,
+                        30
+                    ]
+                }
+            },
+            {
+                "speedhud@common_toggles.mod_toggles": {
+                    "$toggle_tags": "$speed_meter",
+                    "$toggle_view_binding_name": "speed_hud",
+                    "$button_icon": ".light/textures/icons/speed_hud",
+                    "$button_text": "Speedhud",
+                    "layer": 40,
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "$label_offset": [
+                        5,
+                        0
+                    ],
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        15,
+                        60
+                    ]
+                }
+            },
+            {
+                "statushud@common_toggles.mod_toggles": {
+                    "$toggle_tags": "$status_hud",
+                    "$toggle_view_binding_name": "status_hud",
+                    "$button_icon": ".light/textures/icons/status_hud",
+                    "$button_text": "Statushud",
+                    "layer": 40,
+                    "$label_offset": [
+                        5,
+                        0
+                    ],
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        0,
+                        -30
+                    ]
+                }
+            },
+            {
+                "mainhand@common_toggles.mod_toggles": {
+                    "$toggle_tags": "$mainhand_slot",
+                    "$toggle_view_binding_name": "mainhand_slot",
+                    "$button_text": "Mainhand",
+                    "$button_icon": ".light/textures/icons/mainhand_hud",
+                    "layer": 40,
+                    "$label_offset": [
+                        5,
+                        0
+                    ],
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "fps_counter@common_toggles.mod_toggles": {
+                    "$toggle_tags": "$fps_counter",
+                    "$button_icon": ".light/textures/icons/fps_counter",
+                    "$toggle_view_binding_name": "fps_counter_mod",
+                    "$button_text": "Fps Counter",
+                    "layer": 40,
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        0,
+                        30
+                    ]
+                }
+            },
+            {
+                "timer_hud@common_toggles.mod_toggles": {
+                    "$toggle_tags": "$timer_hud",
+                    "$button_icon": ".light/textures/icons/timer_hud",
+                    "$toggle_view_binding_name": "timer_hud_mod",
+                    "$button_text": "Timer Hud",
+                    "layer": 40,
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "$label_offset": [
+                        5,
+                        0
+                    ],
+                    "offset": [
+                        0,
+                        60
+                    ]
+                }
+            },
+            {
+                "day_counter@common_toggles.mod_toggles": {
+                    "$toggle_tags": "$day_counter",
+                    "$button_icon": ".light/textures/icons/day_counter",
+                    "$toggle_view_binding_name": "day_counter_mod",
+                    "$button_text": "Day Counter",
+                    "layer": 40,
+                    "anchor_from": "right_middle",
+                    "anchor_to": "right_middle",
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        -15,
+                        -30
+                    ]
+                }
+            },
+            {
+                "debug_hud@common_toggles.mod_toggles": {
+                    "$toggle_tags": "$debug_hud",
+                    "$button_icon": ".light/textures/icons/debug_hud",
+                    "$toggle_view_binding_name": "debug_hud_mod",
+                    "$button_text": "Debug Hud",
+                    "layer": 40,
+                    "anchor_from": "right_middle",
+                    "anchor_to": "right_middle",
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "$label_offset": [
+                        5,
+                        0
+                    ],
+                    "offset": [
+                        -15,
+                        0
+                    ]
+                }
+            },
+            {
+                "pot_counter@common_toggles.mod_toggles": {
+                    "$toggle_tags": "$pot_counter",
+                    "$button_icon": ".light/textures/icons/pot_counter",
+                    "$toggle_view_binding_name": "pot_counter_mod",
+                    "$button_text": "Pot Counter",
+                    "layer": 40,
+                    "anchor_from": "right_middle",
+                    "anchor_to": "right_middle",
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "offset": [
+                        -15,
+                        30
+                    ]
+                }
+            },
+            {
+                "ip_display@common_toggles.mod_toggles": {
+                    "$toggle_tags": "$ip_display",
+                    "$toggle_view_binding_name": "ip_display_mod",
+                    "$button_icon": ".light/textures/icons/ip_display",
+                    "$button_text": "Ip Display",
+                    "layer": 40,
+                    "anchor_from": "right_middle",
+                    "anchor_to": "right_middle",
+                    "size": [
+                        88,
+                        24
+                    ],
+                    "$label_offset": [
+                        5,
+                        0
+                    ],
+                    "offset": [
+                        -15,
+                        60
+                    ]
+                }
+            }
+        ]
+    }
+}

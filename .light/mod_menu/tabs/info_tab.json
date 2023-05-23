@@ -1,0 +1,140 @@
+{
+    "namespace": "light_mod_menu",
+    "info_tab@common.scrolling_panel": {
+        "layer": 10000,
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "$show_background": false,
+        "$scroll_track_size": [
+            5,
+            "100% - 4px"
+        ],
+        "$scroll_track_offset|default": [
+            -4,
+            2
+        ],
+        "$scrolling_content": "light_mod_menu.info_tab_content",
+        "always_handle_scrolling": true,
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "info_tab",
+                "source_property_name": "#toggle_state",
+                "target_property_name": "#visible"
+            }
+        ]
+    },
+    "info_tab_content": {
+        "type": "panel",
+        "size": [
+            "100%",
+            "100%c"
+        ],
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "info_tab",
+                "source_property_name": "#toggle_state",
+                "target_property_name": "#visible"
+            }
+        ],
+        "controls": [
+            {
+                "Title": {
+                    "type": "label",
+                    "text": "Information",
+                    "font_type": "MinecraftTen",
+                    "color": "black",
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "offset": [
+                        0,
+                        35
+                    ]
+                }
+            },
+            {
+                "Config": {
+                    "type": "label",
+                    "text": "Config:",
+                    "font_type": "MinecraftTen",
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "offset": [
+                        0,
+                        50
+                    ]
+                }
+            },
+            {
+                "config_text": {
+                    "type": "label",
+                    "text": "You can Save the mods by editing the §cconfig.txt§f file.\nThe mods will be saved when you rejoin.",
+                    "font_type": "",
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "offset": [
+                        2,
+                        20
+                    ]
+                }
+            },
+            {
+                "Greenscreen": {
+                    "type": "label",
+                    "text": "Greenscreen:",
+                    "font_type": "MinecraftTen",
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "offset": [
+                        0,
+                        85
+                    ]
+                }
+            },
+            {
+                "greenscreen_text": {
+                    "type": "label",
+                    "text": "To make a §aGreenscreen§f you have to sneak and hold a slime\nball. To remove it simple sneak and hold an nautilus shell.",
+                    "font_type": "",
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "offset": [
+                        2,
+                        55
+                    ]
+                }
+            },
+            {
+                "Waypoints": {
+                    "type": "label",
+                    "text": "Waypoint:",
+                    "font_type": "MinecraftTen",
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "offset": [
+                        0,
+                        120
+                    ]
+                }
+            },
+            {
+                "way_point_text": {
+                    "type": "label",
+                    "text": "To make a §bWaypoint§f you have to sneak and hold a feather.\nTo remove it simple sneak and hold an arrow.",
+                    "font_type": "",
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "offset": [
+                        2,
+                        90
+                    ]
+                }
+            }
+        ]
+    }
+}
