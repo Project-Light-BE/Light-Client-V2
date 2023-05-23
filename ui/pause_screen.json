@@ -1,9 +1,0 @@
-{
-    "pause_screen": {
-        "$screen_content": "pause.content",
-        "$screen_bg_content": "pause.bg",
-        "variables": [],
-        "cache_screen": true,
-        "force_render_below": true
-    }
-}
