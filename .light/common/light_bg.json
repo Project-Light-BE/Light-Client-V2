@@ -1,1 +1,38 @@
-{"namespace":"light_bg","light_bg":{"type":"image","texture":".light/textures/bg/light_bg","fill":true,"size":["125%","120%"],"layer":-1},"light_buttons_bg":{"type":"image","texture":".light/textures/bg/buttons_bg","anchor_from":"top_left","anchor_to":"top_left","alpha":0.70,"size":[75,100],"offset":["93%","30.5%"]},"light_text_bg":{"type":"image","texture":".light/textures/bg/text_bg","anchor_from":"bottom_middle","anchor_to":"bottom_middle","size":[100,20]}}
+{
+  "namespace": "light_bg",
+  "light_bg": {
+    "type": "image",
+    "texture": ".light/textures/bg/light_bg",
+    "fill": true,
+    "size": [
+      "125%",
+      "120%"
+    ],
+    "layer": -1
+  },
+  "light_buttons_bg": {
+    "type": "image",
+    "texture": ".light/textures/bg/buttons_bg",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "alpha": 0.70,
+    "size": [
+      75,
+      100
+    ],
+    "offset": [
+      "93%",
+      "30.5%"
+    ]
+  },
+  "light_text_bg": {
+    "type": "image",
+    "texture": ".light/textures/bg/text_bg",
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "size": [
+      100,
+      20
+    ]
+  }
+}
