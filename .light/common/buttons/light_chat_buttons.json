@@ -1,1 +1,88 @@
-{"namespace":"light_chat_buttons","light_chat_button@common.button":{"size":[160,20],"controls":[{"button_panel":{"type":"panel","size":["100%","100%"],"layer":10,"$button_content|default":"light_chat_buttons.button_image","controls":[{"button_content@$button_content":{"layer":3}},{"button_texture@$button_texture":{"layer":1}}]}},{"default@light_chat_buttons.button_default":{}},{"hover@light_chat_buttons.button_hover":{}},{"pressed@light_chat_buttons.button_pressed":{}}]},"button_image":{"type":"image","layer":2,"size":["70%","70%"],"texture":"$button_image"},"button_content":{"type":"image","$custom_content|default":"","$default|default":false,"$hover|default":false,"$pressed|default":false,"$locked|default":false,"$button_bindings|default":[],"controls":[{"custom_content@$custom_content":{}},{"button_content@light_chat_buttons.button_image":{"visible":"($custom_content = '')"}}]},"button_default@light_chat_buttons.button_content":{"$default":true,"alpha":"$default_alpha","$default_alpha|default":1,"texture":"textures/ui/button_borderless_light"},"button_hover@light_chat_buttons.button_content":{"$hover":true,"texture":"$hover_button_texture","$hover_button_texture|default":"textures/ui/button_borderless_lighthover","propagate_alpha":true},"button_pressed@light_chat_buttons.button_hover":{"texture":"$pressed_button_texture","$pressed_button_texture|default":"textures/ui/button_borderless_lightpressed","$pressed":true}}
+{
+  "namespace": "light_chat_buttons",
+  "light_chat_button@common.button": {
+    "size": [
+      160,
+      20
+    ],
+    "controls": [
+      {
+        "button_panel": {
+          "type": "panel",
+          "size": [
+            "100%",
+            "100%"
+          ],
+          "layer": 10,
+          "$button_content|default": "light_chat_buttons.button_image",
+          "controls": [
+            {
+              "button_content@$button_content": {
+                "layer": 3
+              }
+            },
+            {
+              "button_texture@$button_texture": {
+                "layer": 1
+              }
+            }
+          ]
+        }
+      },
+      {
+        "default@light_chat_buttons.button_default": {}
+      },
+      {
+        "hover@light_chat_buttons.button_hover": {}
+      },
+      {
+        "pressed@light_chat_buttons.button_pressed": {}
+      }
+    ]
+  },
+  "button_image": {
+    "type": "image",
+    "layer": 2,
+    "size": [
+      "70%",
+      "70%"
+    ],
+    "texture": "$button_image"
+  },
+  "button_content": {
+    "type": "image",
+    "$custom_content|default": "",
+    "$default|default": false,
+    "$hover|default": false,
+    "$pressed|default": false,
+    "$locked|default": false,
+    "$button_bindings|default": [],
+    "controls": [
+      {
+        "custom_content@$custom_content": {}
+      },
+      {
+        "button_content@light_chat_buttons.button_image": {
+          "visible": "($custom_content = '')"
+        }
+      }
+    ]
+  },
+  "button_default@light_chat_buttons.button_content": {
+    "$default": true,
+    "alpha": "$default_alpha",
+    "$default_alpha|default": 1,
+    "texture": "textures/ui/button_borderless_light"
+  },
+  "button_hover@light_chat_buttons.button_content": {
+    "$hover": true,
+    "texture": "$hover_button_texture",
+    "$hover_button_texture|default": "textures/ui/button_borderless_lighthover",
+    "propagate_alpha": true
+  },
+  "button_pressed@light_chat_buttons.button_hover": {
+    "texture": "$pressed_button_texture",
+    "$pressed_button_texture|default": "textures/ui/button_borderless_lightpressed",
+    "$pressed": true
+  }
+}
