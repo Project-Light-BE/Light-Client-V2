@@ -1,1 +1,75 @@
-{"namespace":"light_slider","slider@common.slider":{"$slider_direction|default":"horizontal","slider_direction":"$slider_direction","$option_enabled_binding_name":"slider_enabled","$option_label":"","$slider_name":"_this_slider_","$slider_value_bindings|default":"(((#slider_steps * 0) + $toggle_tags) * 5)","bindings":[{"binding_name":"#slider_steps"},{"binding_type":"view","source_property_name":"$slider_value_bindings","target_property_name":"#slider_value"}],"controls":[{"slider_box@common.slider_box":{}},{"slider_bar_default@common.slider_bar_default":{}},{"slider_bar_hover@common.slider_bar_hover":{}},{"slider_text@slider_text":{}}],"property_bag":{"#slider_steps":"$slider_steps"}},"slider_panel":{"clips_children":true,"controls":[{"$slider_view_binding_name@slider":{"size":["100% - 2px","100% - 2px"]}},{"@common.slider_border":{"color":[0,0,0]}},{"slider_text@slider_text":{}}],"layer":100,"type":"panel"},"slider_text":{"color":"white","font_type":"smooth","text":"$slider_text","type":"label","offset":[0,-17]}}
+{
+  "namespace": "light_slider",
+  "slider@common.slider": {
+    "$slider_direction|default": "horizontal",
+    "slider_direction": "$slider_direction",
+    "$option_enabled_binding_name": "slider_enabled",
+    "$option_label": "",
+    "$slider_name": "_this_slider_",
+    "$slider_value_bindings|default": "(((#slider_steps * 0) + $toggle_tags) * 5)",
+    "bindings": [
+      {
+        "binding_name": "#slider_steps"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "$slider_value_bindings",
+        "target_property_name": "#slider_value"
+      }
+    ],
+    "controls": [
+      {
+        "slider_box@common.slider_box": {}
+      },
+      {
+        "slider_bar_default@common.slider_bar_default": {}
+      },
+      {
+        "slider_bar_hover@common.slider_bar_hover": {}
+      },
+      {
+        "slider_text@slider_text": {}
+      }
+    ],
+    "property_bag": {
+      "#slider_steps": "$slider_steps"
+    }
+  },
+  "slider_panel": {
+    "clips_children": true,
+    "controls": [
+      {
+        "$slider_view_binding_name@slider": {
+          "size": [
+            "100% - 2px",
+            "100% - 2px"
+          ]
+        }
+      },
+      {
+        "@common.slider_border": {
+          "color": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "slider_text@slider_text": {}
+      }
+    ],
+    "layer": 100,
+    "type": "panel"
+  },
+  "slider_text": {
+    "color": "white",
+    "font_type": "smooth",
+    "text": "$slider_text",
+    "type": "label",
+    "offset": [
+      0,
+      -17
+    ]
+  }
+}
