@@ -1,1 +1,50 @@
-{"namespace":"light_toggle","toggle_main@common.toggle":{"$toggle_collection_detail_name":"$toggle_view_binding_name","$unchecked_locked_control|default":"light_toggle.unchecked","$unchecked_locked_hover_control|default":"light_toggle.unchecked","$checked_locked_control|default":"light_toggle.checked","$checked_locked_hover_control|default":"light_toggle.checked","$unchecked_control|default":"light_toggle.unchecked","$checked_control|default":"light_toggle.checked","$unchecked_hover_control|default":"light_toggle.unchecked_hover","$checked_hover_control|default":"light_toggle.checked_hover","$button_type_panel":"light_toggle.toggle_text"},"unchecked":{"type":"image","texture":"textures/ui/toggle_off"},"checked":{"type":"image","texture":"textures/ui/toggle_on"},"unchecked_hover":{"type":"image","texture":"textures/ui/toggle_off_hover"},"checked_hover":{"type":"image","texture":"textures/ui/toggle_on_hover"},"toggle_text":{"type":"label","text":"$toggle_text","offset":[18,0]},"light_toggles":{"type":"panel","layer":3,"$toggle_view_binding_name|default":"","$template_toggle|default":"light_toggle.toggle_main","controls":[{"$toggle_view_binding_name@$template_toggle":{}}]}}
+{
+  "namespace": "light_toggle",
+  "toggle_main@common.toggle": {
+    "$toggle_collection_detail_name": "$toggle_view_binding_name",
+    "$unchecked_locked_control|default": "light_toggle.unchecked",
+    "$unchecked_locked_hover_control|default": "light_toggle.unchecked",
+    "$checked_locked_control|default": "light_toggle.checked",
+    "$checked_locked_hover_control|default": "light_toggle.checked",
+    "$unchecked_control|default": "light_toggle.unchecked",
+    "$checked_control|default": "light_toggle.checked",
+    "$unchecked_hover_control|default": "light_toggle.unchecked_hover",
+    "$checked_hover_control|default": "light_toggle.checked_hover",
+    "$button_type_panel": "light_toggle.toggle_text"
+  },
+  "unchecked": {
+    "type": "image",
+    "texture": "textures/ui/toggle_off"
+  },
+  "checked": {
+    "type": "image",
+    "texture": "textures/ui/toggle_on"
+  },
+  "unchecked_hover": {
+    "type": "image",
+    "texture": "textures/ui/toggle_off_hover"
+  },
+  "checked_hover": {
+    "type": "image",
+    "texture": "textures/ui/toggle_on_hover"
+  },
+  "toggle_text": {
+    "type": "label",
+    "text": "$toggle_text",
+    "offset": [
+      18,
+      0
+    ]
+  },
+  "light_toggles": {
+    "type": "panel",
+    "layer": 3,
+    "$toggle_view_binding_name|default": "",
+    "$template_toggle|default": "light_toggle.toggle_main",
+    "controls": [
+      {
+        "$toggle_view_binding_name@$template_toggle": {}
+      }
+    ]
+  }
+}
