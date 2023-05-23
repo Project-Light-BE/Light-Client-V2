@@ -1,69 +1,86 @@
 {
-    "namespace": "light_categories",
-    "categories": {
-        "orientation": "horizontal",
-        "type": "stack_panel",
-        "size": [
-            "100%",
-            "100%c"
-        ],
-        "controls": [
-            {
-                "general@common_toggles.toggle_section": {
-                    "$radio_toggle_group": true,
-                    "$button_text": "General",
-                    "$button_icon": ".light/textures/icons/mod_menu/utilities",
-                    "$toggle_group_forced_index": 0,
-                    "$toggle_view_binding_name": "mods_tab",
-                    "layer": 40,
-                    "size": [
-                        58,
-                        25
-                    ]
-                }
-            },
-            {
-                "elements@common_toggles.toggle_section": {
-                    "$radio_toggle_group": true,
-                    "$button_text": "Elements",
-                    "$button_icon": ".light/textures/icons/mod_menu/elements",
-                    "$toggle_group_forced_index": 1,
-                    "$toggle_view_binding_name": "elements_tab",
-                    "layer": 40,
-                    "size": [
-                        58,
-                        25
-                    ]
-                }
-            },
-            {
-                "crosshair@common_toggles.toggle_section": {
-                    "$radio_toggle_group": true,
-                    "$button_text": "Crosshair",
-                    "$button_icon": ".light/textures/icons/mod_menu/crosshair",
-                    "$toggle_group_forced_index": 2,
-                    "$toggle_view_binding_name": "crosshair_tab",
-                    "layer": 40,
-                    "size": [
-                        58,
-                        25
-                    ]
-                }
-            },
-            {
-                "info@common_toggles.toggle_section": {
-                    "$radio_toggle_group": true,
-                    "$button_text": "Info",
-                    "$button_icon": ".light/textures/icons/mod_menu/info",
-                    "$toggle_group_forced_index": 3,
-                    "$toggle_view_binding_name": "info_tab",
-                    "layer": 40,
-                    "size": [
-                        58,
-                        25
-                    ]
-                }
-            }
-        ]
-    }
+  "namespace": "light_categories",
+  "categories": {
+    "orientation": "horizontal",
+    "type": "stack_panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "layer": 10000,
+    "offset": [
+      37,
+      5
+    ],
+    "controls": [
+      {
+        "general@common_toggles.toggle_section": {
+          "$radio_toggle_group": true,
+          "$button_text": "Modules",
+          "$toggle_group_forced_index": 0,
+          "$toggle_view_binding_name": "mods_tab",
+          "layer": 40,
+          "size": [
+            58,
+            25
+          ]
+        }
+      },
+      {
+        "elements@common_toggles.toggle_section": {
+          "$radio_toggle_group": true,
+          "$button_text": "Elements",
+          "$toggle_group_forced_index": 1,
+          "$toggle_view_binding_name": "elements_tab",
+          "layer": 40,
+          "size": [
+            58,
+            25
+          ]
+        }
+      },
+      {
+        "crosshair@common_toggles.toggle_section": {
+          "$radio_toggle_group": true,
+          "$button_text": "Crosshair",
+          "$toggle_group_forced_index": 2,
+          "$toggle_view_binding_name": "crosshair_tab",
+          "layer": 40,
+          "size": [
+            58,
+            25
+          ]
+        }
+      },
+      {
+        "info@common_toggles.toggle_section": {
+          "$radio_toggle_group": true,
+          "$button_text": "Info",
+          "$toggle_group_forced_index": 3,
+          "$toggle_view_binding_name": "info_tab",
+          "layer": 40,
+          "size": [
+            58,
+            25
+          ]
+        }
+      },
+      {
+        "settings@common_toggles.toggle_section": {
+          "$radio_toggle_group": true,
+          "$button_icon": "textures/ui/gear",
+          "$toggle_group_forced_index": 4,
+          "$toggle_view_binding_name": "settings_tab",
+          "$button_type_panel": "common_toggles.button_icon",
+          "layer": 40,
+          "size": [
+            25,
+            25
+          ]
+        }
+      }
+    ]
+  }
 }
