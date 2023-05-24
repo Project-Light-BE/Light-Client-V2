@@ -1,1 +1,511 @@
-{"namespace":"light_mod_menu","crosshair_tab":{"type":"stack_panel","orientation":"vertical","size":["100%","100%c"],"offset":[50,11],"anchor_from":"center","anchor_to":"center","bindings":[{"binding_type":"view","source_control_name":"crosshair_tab","source_property_name":"#toggle_state","target_property_name":"#visible"}],"controls":[{"crosshair_panel2@crosshair_panel2":{}},{"crosshair_panel3@crosshair_panel3":{}},{"crosshair_panel4@crosshair_panel4":{}},{"crosshair_panel5@crosshair_panel5":{}}]},"crosshair_panel2":{"type":"stack_panel","orientation":"horizontal","size":[205,22],"controls":[{"1@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.1","$toggle_group_forced_index":1,"$button_icon":".light/textures/crosshairs/1","size":[22,22],"layer":500}},{"2@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.2","$toggle_group_forced_index":2,"$button_icon":".light/textures/crosshairs/2","size":[22,22],"layer":500}},{"3@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.3","$toggle_group_forced_index":3,"$button_icon":".light/textures/crosshairs/3","size":[22,22],"layer":500}},{"4@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.4","$toggle_group_forced_index":4,"$button_icon":".light/textures/crosshairs/4","size":[22,22],"layer":500}},{"5@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.5","$toggle_group_forced_index":5,"$button_icon":".light/textures/crosshairs/5","size":[22,22],"layer":500}},{"6@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.6","$toggle_group_forced_index":6,"$button_icon":".light/textures/crosshairs/6","size":[22,22],"layer":500}},{"7@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.7","$toggle_group_forced_index":7,"$button_icon":".light/textures/crosshairs/7","size":[22,22],"layer":500}},{"8@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.8","$toggle_group_forced_index":8,"$button_icon":".light/textures/crosshairs/8","size":[22,22],"layer":500}},{"9@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.9","$toggle_group_forced_index":9,"$button_icon":".light/textures/crosshairs/9","size":[22,22],"layer":500}}]},"crosshair_panel3":{"type":"stack_panel","orientation":"horizontal","size":[205,21.25],"controls":[{"10@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.10","$toggle_group_forced_index":10,"$button_icon":".light/textures/crosshairs/10","size":[22,22],"layer":500}},{"11@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.11","$toggle_group_forced_index":11,"$button_icon":".light/textures/crosshairs/11","size":[22,22],"layer":500}},{"12@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.12","$toggle_group_forced_index":12,"$button_icon":".light/textures/crosshairs/12","size":[22,22],"layer":500}},{"13@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.13","$toggle_group_forced_index":13,"$button_icon":".light/textures/crosshairs/13","size":[22,22],"layer":500}},{"14@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.14","$toggle_group_forced_index":14,"$button_icon":".light/textures/crosshairs/14","size":[22,22],"layer":500}},{"15@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.15","$toggle_group_forced_index":15,"$button_icon":".light/textures/crosshairs/15","size":[22,22],"layer":500}},{"16@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.16","$toggle_group_forced_index":16,"$button_icon":".light/textures/crosshairs/16","size":[22,22],"layer":500}},{"17@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.17","$toggle_group_forced_index":17,"$button_icon":".light/textures/crosshairs/17","size":[22,22],"layer":500}},{"18@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.18","$toggle_group_forced_index":18,"$button_icon":".light/textures/crosshairs/18","size":[22,22],"layer":500}}]},"crosshair_panel4":{"type":"stack_panel","orientation":"horizontal","size":[205,21.25],"controls":[{"19@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.19","$toggle_group_forced_index":19,"$button_icon":".light/textures/crosshairs/19","size":[22,22],"layer":500}},{"20@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.20","$toggle_group_forced_index":20,"$button_icon":".light/textures/crosshairs/20","size":[22,22],"layer":500}},{"21@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.21","$toggle_group_forced_index":21,"$button_icon":".light/textures/crosshairs/21","size":[22,22],"layer":500}},{"22@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.22","$toggle_group_forced_index":22,"$button_icon":".light/textures/crosshairs/22","size":[22,22],"layer":500}},{"23@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.23","$toggle_group_forced_index":23,"$button_icon":".light/textures/crosshairs/23","size":[22,22],"layer":500}},{"24@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.24","$toggle_group_forced_index":24,"$button_icon":".light/textures/crosshairs/24","size":[22,22],"layer":500}},{"25@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.25","$toggle_group_forced_index":25,"$button_icon":".light/textures/crosshairs/25","size":[22,22],"layer":500}},{"26@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.26","$toggle_group_forced_index":26,"$button_icon":".light/textures/crosshairs/26","size":[22,22],"layer":500}},{"27@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.27","$toggle_group_forced_index":27,"$button_icon":".light/textures/crosshairs/27","size":[22,22],"layer":500}}]},"crosshair_panel5":{"type":"stack_panel","orientation":"horizontal","size":[205,21.25],"controls":[{"28@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.28","$toggle_group_forced_index":28,"$button_icon":".light/textures/crosshairs/28","size":[22,22],"layer":500}},{"29@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.29","$toggle_group_forced_index":29,"$button_icon":".light/textures/crosshairs/29","size":[22,22],"layer":500}},{"30@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.30","$toggle_group_forced_index":30,"$button_icon":".light/textures/crosshairs/30","size":[22,22],"layer":500}},{"31@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.31","$toggle_group_forced_index":31,"$button_icon":".light/textures/crosshairs/31","size":[22,22],"layer":500}},{"32@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.32","$toggle_group_forced_index":32,"$button_icon":".light/textures/crosshairs/32","size":[22,22],"layer":500}},{"33@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.33","$toggle_group_forced_index":33,"$button_icon":".light/textures/crosshairs/33","size":[22,22],"layer":500}},{"34@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.34","$toggle_group_forced_index":34,"$button_icon":".light/textures/crosshairs/34","size":[22,22],"layer":500}},{"35@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.35","$toggle_group_forced_index":35,"$button_icon":".light/textures/crosshairs/35","size":[22,22],"layer":500}},{"36@common_toggles.toggle_crosshair":{"$toggle_view_binding_name":"ch.toggle.36","$toggle_group_forced_index":36,"$button_icon":".light/textures/crosshairs/36","size":[22,22],"layer":500}}]}}
+{
+  "namespace": "light_mod_menu",
+  "crosshair_tab": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "offset": [
+      50,
+      11
+    ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "crosshair_tab",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "crosshair_panel2@crosshair_panel2": {}
+      },
+      {
+        "crosshair_panel3@crosshair_panel3": {}
+      },
+      {
+        "crosshair_panel4@crosshair_panel4": {}
+      },
+      {
+        "crosshair_panel5@crosshair_panel5": {}
+      }
+    ]
+  },
+  "crosshair_panel2": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [
+      205,
+      22
+    ],
+    "controls": [
+      {
+        "1@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.1",
+          "$toggle_group_forced_index": 1,
+          "$button_icon": ".light/textures/crosshairs/1",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "2@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.2",
+          "$toggle_group_forced_index": 2,
+          "$button_icon": ".light/textures/crosshairs/2",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "3@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.3",
+          "$toggle_group_forced_index": 3,
+          "$button_icon": ".light/textures/crosshairs/3",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "4@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.4",
+          "$toggle_group_forced_index": 4,
+          "$button_icon": ".light/textures/crosshairs/4",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "5@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.5",
+          "$toggle_group_forced_index": 5,
+          "$button_icon": ".light/textures/crosshairs/5",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "6@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.6",
+          "$toggle_group_forced_index": 6,
+          "$button_icon": ".light/textures/crosshairs/6",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "7@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.7",
+          "$toggle_group_forced_index": 7,
+          "$button_icon": ".light/textures/crosshairs/7",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "8@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.8",
+          "$toggle_group_forced_index": 8,
+          "$button_icon": ".light/textures/crosshairs/8",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "9@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.9",
+          "$toggle_group_forced_index": 9,
+          "$button_icon": ".light/textures/crosshairs/9",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      }
+    ]
+  },
+  "crosshair_panel3": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [
+      205,
+      21.25
+    ],
+    "controls": [
+      {
+        "10@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.10",
+          "$toggle_group_forced_index": 10,
+          "$button_icon": ".light/textures/crosshairs/10",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "11@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.11",
+          "$toggle_group_forced_index": 11,
+          "$button_icon": ".light/textures/crosshairs/11",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "12@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.12",
+          "$toggle_group_forced_index": 12,
+          "$button_icon": ".light/textures/crosshairs/12",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "13@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.13",
+          "$toggle_group_forced_index": 13,
+          "$button_icon": ".light/textures/crosshairs/13",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "14@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.14",
+          "$toggle_group_forced_index": 14,
+          "$button_icon": ".light/textures/crosshairs/14",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "15@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.15",
+          "$toggle_group_forced_index": 15,
+          "$button_icon": ".light/textures/crosshairs/15",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "16@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.16",
+          "$toggle_group_forced_index": 16,
+          "$button_icon": ".light/textures/crosshairs/16",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "17@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.17",
+          "$toggle_group_forced_index": 17,
+          "$button_icon": ".light/textures/crosshairs/17",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "18@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.18",
+          "$toggle_group_forced_index": 18,
+          "$button_icon": ".light/textures/crosshairs/18",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      }
+    ]
+  },
+  "crosshair_panel4": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [
+      205,
+      21.25
+    ],
+    "controls": [
+      {
+        "19@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.19",
+          "$toggle_group_forced_index": 19,
+          "$button_icon": ".light/textures/crosshairs/19",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "20@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.20",
+          "$toggle_group_forced_index": 20,
+          "$button_icon": ".light/textures/crosshairs/20",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "21@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.21",
+          "$toggle_group_forced_index": 21,
+          "$button_icon": ".light/textures/crosshairs/21",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "22@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.22",
+          "$toggle_group_forced_index": 22,
+          "$button_icon": ".light/textures/crosshairs/22",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "23@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.23",
+          "$toggle_group_forced_index": 23,
+          "$button_icon": ".light/textures/crosshairs/23",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "24@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.24",
+          "$toggle_group_forced_index": 24,
+          "$button_icon": ".light/textures/crosshairs/24",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "25@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.25",
+          "$toggle_group_forced_index": 25,
+          "$button_icon": ".light/textures/crosshairs/25",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "26@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.26",
+          "$toggle_group_forced_index": 26,
+          "$button_icon": ".light/textures/crosshairs/26",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "27@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.27",
+          "$toggle_group_forced_index": 27,
+          "$button_icon": ".light/textures/crosshairs/27",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      }
+    ]
+  },
+  "crosshair_panel5": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [
+      205,
+      21.25
+    ],
+    "controls": [
+      {
+        "28@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.28",
+          "$toggle_group_forced_index": 28,
+          "$button_icon": ".light/textures/crosshairs/28",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "29@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.29",
+          "$toggle_group_forced_index": 29,
+          "$button_icon": ".light/textures/crosshairs/29",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "30@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.30",
+          "$toggle_group_forced_index": 30,
+          "$button_icon": ".light/textures/crosshairs/30",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "31@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.31",
+          "$toggle_group_forced_index": 31,
+          "$button_icon": ".light/textures/crosshairs/31",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "32@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.32",
+          "$toggle_group_forced_index": 32,
+          "$button_icon": ".light/textures/crosshairs/32",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "33@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.33",
+          "$toggle_group_forced_index": 33,
+          "$button_icon": ".light/textures/crosshairs/33",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "34@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.34",
+          "$toggle_group_forced_index": 34,
+          "$button_icon": ".light/textures/crosshairs/34",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "35@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.35",
+          "$toggle_group_forced_index": 35,
+          "$button_icon": ".light/textures/crosshairs/35",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      },
+      {
+        "36@common_toggles.toggle_crosshair": {
+          "$toggle_view_binding_name": "ch.toggle.36",
+          "$toggle_group_forced_index": 36,
+          "$button_icon": ".light/textures/crosshairs/36",
+          "size": [
+            22,
+            22
+          ],
+          "layer": 500
+        }
+      }
+    ]
+  }
+}
