@@ -1,1 +1,31 @@
-{"format_version":"1.10.0","animation_controllers":{"controller.animation.fps_counter":{"initial_state":"ctrl","states":{"default":{"on_entry":["v.life_time = q.life_time;"],"transitions":[{"ctrl":"(q.life_time - v.life_time)>= 1.5"}]},"ctrl":{"on_entry":["variable.fps = (0.1/q.delta_time);","variable.fps2 = (0.55/q.delta_time);"],"transitions":[{"default":"1.0"}]}}}}}
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.fps_counter": {
+      "initial_state": "ctrl",
+      "states": {
+        "default": {
+          "on_entry": [
+            "v.life_time = q.life_time;"
+          ],
+          "transitions": [
+            {
+              "ctrl": "(q.life_time - v.life_time)>= 1.5"
+            }
+          ]
+        },
+        "ctrl": {
+          "on_entry": [
+            "variable.fps = (0.1/q.delta_time);",
+            "variable.fps2 = (0.55/q.delta_time);"
+          ],
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
