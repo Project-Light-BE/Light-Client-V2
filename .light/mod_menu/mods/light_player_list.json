@@ -1,1 +1,143 @@
-{"namespace":"light_mods","player_list_panel":{"type":"panel","size":["100%cm","100%cm"],"max_size":["100%cm",166],"anchor_from":"top_right","anchor_to":"top_right","clips_children":true,"bindings":[{"binding_type":"view","source_control_name":"player_list_mod","source_property_name":"#toggle_state","target_property_name":"#visible"}],"controls":[{"bg":{"type":"image","size":["100%cm + 2px","100%cm + 2px"],"texture":"textures/ui/hud_tip_text_background","anchor_from":"top_middle","anchor_to":"top_middle","layer":50,"offset":[0,-0.5],"alpha":0.65,"controls":[{"players_list_grid":{"type":"grid","size":[125,"100%c"],"grid_item_template":"light_mods.player_names_items","grid_dimension_binding":"#players_grid_dimension","collection_name":"players_collection","bindings":[{"binding_name":"#players_grid_dimension","binding_condition":"always"}]}}]}}]},"player_names_items":{"type":"panel","size":[125,"100%cm + 1px"],"controls":[{"stack_horizontal":{"type":"stack_panel","size":["100%",10],"orientation":"horizontal","controls":[{"avatar":{"type":"image","size":[10,10],"texture_file_system":"#texture_source","bindings":[{"binding_name":"#texture","binding_type":"collection","binding_collection_name":"players_collection"},{"binding_name":"#texture_source","binding_name_override":"#texture_file_system","binding_type":"collection","binding_collection_name":"players_collection"},{"binding_name":"#gamerpic_visible","binding_type":"collection","binding_collection_name":"players_collection","binding_name_override":"#visible"}]}},{"empty":{"type":"panel","size":[1,0]}},{"player_gamertag":{"type":"label","text":"#gamertag","layer":2,"size":["default",10],"font_scale_factor":1,"bindings":[{"binding_name":"#gamertag","binding_type":"collection","binding_collection_name":"players_collection"}]}}]}}]}}
+{
+  "namespace": "light_mods",
+  "player_list_panel": {
+    "type": "panel",
+    "size": [
+      "100%cm",
+      "100%cm"
+    ],
+    "max_size": [
+      "100%cm",
+      166
+    ],
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "clips_children": true,
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "player_list_mod",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "bg": {
+          "type": "image",
+          "size": [
+            "100%cm + 2px",
+            "100%cm + 2px"
+          ],
+          "texture": "textures/ui/hud_tip_text_background",
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "layer": 50,
+          "offset": [
+            0,
+            -0.5
+          ],
+          "alpha": 0.65,
+          "controls": [
+            {
+              "players_list_grid": {
+                "type": "grid",
+                "size": [
+                  125,
+                  "100%c"
+                ],
+                "grid_item_template": "light_mods.player_names_items",
+                "grid_dimension_binding": "#players_grid_dimension",
+                "collection_name": "players_collection",
+                "bindings": [
+                  {
+                    "binding_name": "#players_grid_dimension",
+                    "binding_condition": "always"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "player_names_items": {
+    "type": "panel",
+    "size": [
+      125,
+      "100%cm + 1px"
+    ],
+    "controls": [
+      {
+        "stack_horizontal": {
+          "type": "stack_panel",
+          "size": [
+            "100%",
+            10
+          ],
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "avatar": {
+                "type": "image",
+                "size": [
+                  10,
+                  10
+                ],
+                "texture_file_system": "#texture_source",
+                "bindings": [
+                  {
+                    "binding_name": "#texture",
+                    "binding_type": "collection",
+                    "binding_collection_name": "players_collection"
+                  },
+                  {
+                    "binding_name": "#texture_source",
+                    "binding_name_override": "#texture_file_system",
+                    "binding_type": "collection",
+                    "binding_collection_name": "players_collection"
+                  },
+                  {
+                    "binding_name": "#gamerpic_visible",
+                    "binding_type": "collection",
+                    "binding_collection_name": "players_collection",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "empty": {
+                "type": "panel",
+                "size": [
+                  1,
+                  0
+                ]
+              }
+            },
+            {
+              "player_gamertag": {
+                "type": "label",
+                "text": "#gamertag",
+                "layer": 2,
+                "size": [
+                  "default",
+                  10
+                ],
+                "font_scale_factor": 1,
+                "bindings": [
+                  {
+                    "binding_name": "#gamertag",
+                    "binding_type": "collection",
+                    "binding_collection_name": "players_collection"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
