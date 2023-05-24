@@ -1,116 +1,343 @@
 {
-    "namespace": "pause",
-    "content": {
-        "type": "panel",
-        "controls": [
+  "namespace": "light_pause",
+  "mod_menu_toggle@common_toggles.mod_menu_button": {
+    "$button_text": "Mods",
+    "$toggle_view_binding_name": "hide_mod_menu",
+    "anchor_from": "bottom_left",
+    "anchor_to": "bottom_left",
+    "size": [
+      32,
+      18
+    ],
+    "layer": 10000,
+    "$button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "mapping_type": "double_pressed",
+        "to_button_id": "button.mod_menu"
+      }
+    ]
+  },
+  "light_pause_info_panel": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [
+      "default",
+      20
+    ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "layer": 2,
+    "controls": [
+      {
+        "light_log_in_as_panel": {
+          "type": "image",
+          "texture": ".light/textures/buttons/default",
+          "size": [
+            "100%cm + 25px",
+            20
+          ],
+          "alpha": 0.65,
+          "controls": [
             {
-                "Hide_pause@common_toggles.mod_menu_button": {
-                    "$button_text": "Mods",
-                    "$toggle_view_binding_name": "mod_menu",
-                    "anchor_from": "bottom_left",
-                    "anchor_to": "bottom_left",
-                    "size": [
-                        32,
-                        18
-                    ]
-                }
+              "player_head": {
+                "type": "panel",
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "clips_children": true,
+                "size": [
+                  28,
+                  38
+                ],
+                "layer": 203,
+                "offset": [
+                  -4,
+                  -22
+                ],
+                "controls": [
+                  {
+                    "player_head_renderer": {
+                      "type": "custom",
+                      "renderer": "paper_doll_renderer",
+                      "size": [
+                        35,
+                        85
+                      ],
+                      "offset": [
+                        0,
+                        20
+                      ]
+                    }
+                  }
+                ]
+              }
             },
             {
-                "@main_menu": {}
+              "gamertag_label": {
+                "type": "label",
+                "text_alignment": "left",
+                "layer": 2,
+                "shadow": true,
+                "anchor_from": "left_middle",
+                "offset": [
+                  20,
+                  4
+                ],
+                "color": "white",
+                "anchor_to": "left_middle",
+                "text": "#playername",
+                "bindings": [
+                  {
+                    "binding_name": "#playername"
+                  }
+                ]
+              }
+            },
+            {
+              "login_as": {
+                "type": "label",
+                "text_alignment": "left",
+                "layer": 2,
+                "shadow": true,
+                "font_scale_factor": 0.6,
+                "anchor_from": "left_middle",
+                "offset": [
+                  20,
+                  -4
+                ],
+                "color": "white",
+                "anchor_to": "left_middle",
+                "text": "Logged in as:"
+              }
             }
-        ]
-    },
-    "main_menu": {
-        "type": "panel",
-        "size": [
+          ]
+        }
+      },
+      {
+        "padding": {
+          "type": "panel",
+          "size": [
+            0,
+            2
+          ]
+        }
+      },
+      {
+        "light_playing_in_panel": {
+          "type": "image",
+          "texture": ".light/textures/buttons/default",
+          "size": [
+            "100%cm + 25px",
+            20
+          ],
+          "alpha": 0.65,
+          "controls": [
+            {
+              "ip_image": {
+                "type": "image",
+                "size": [
+                  18,
+                  18
+                ],
+                "texture": "pack_icon",
+                "anchor_from": "left_middle",
+                "anchor_to": "left_middle"
+              }
+            },
+            {
+              "world_name_label": {
+                "type": "label",
+                "text_alignment": "left",
+                "layer": 2,
+                "shadow": true,
+                "anchor_from": "left_middle",
+                "offset": [
+                  20,
+                  4
+                ],
+                "color": "white",
+                "anchor_to": "left_middle",
+                "text": "#worldname",
+                "bindings": [
+                  {
+                    "binding_name": "#worldname"
+                  }
+                ]
+              }
+            },
+            {
+              "playing_in": {
+                "type": "label",
+                "text_alignment": "left",
+                "layer": 2,
+                "shadow": true,
+                "font_scale_factor": 0.6,
+                "anchor_from": "left_middle",
+                "offset": [
+                  20,
+                  -4
+                ],
+                "color": "white",
+                "anchor_to": "left_middle",
+                "text": "Playing in:"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "light_pause_buttons_panel": {
+    "type": "stack_panel",
+    "layer": 2,
+    "size": [
+      150,
+      0
+    ],
+    "offset": [
+      0,
+      -50
+    ],
+    "controls": [
+      {
+        "play_button@light_buttons.light_button": {
+          "size": [
+            150,
+            20
+          ],
+          "$pressed_button_name": "button.menu_continue",
+          "$button_text": "menu.returnToGame"
+        }
+      },
+      {
+        "padding": {
+          "type": "panel",
+          "size": [
+            2,
+            2
+          ]
+        }
+      },
+      {
+        "skins_button@light_buttons.light_button": {
+          "size": [
+            150,
+            20
+          ],
+          "$pressed_button_name": "button.to_profile_or_skins_screen",
+          "$button_text": "Skins"
+        }
+      },
+      {
+        "padding": {
+          "type": "panel",
+          "size": [
+            2,
+            2
+          ]
+        }
+      },
+      {
+        "achievements_button@light_buttons.light_button": {
+          "size": [
+            150,
+            20
+          ],
+          "$pressed_button_name": "button.menu_achievements",
+          "$button_text": "Achievements"
+        }
+      },
+      {
+        "padding": {
+          "type": "panel",
+          "size": [
+            2,
+            2
+          ]
+        }
+      },
+      {
+        "settings_button@light_buttons.light_button": {
+          "size": [
+            150,
+            20
+          ],
+          "$pressed_button_name": "button.menu_settings",
+          "$button_text": "menu.settings"
+        }
+      },
+      {
+        "padding": {
+          "type": "panel",
+          "size": [
+            2,
+            2
+          ]
+        }
+      },
+      {
+        "quit_button@light_buttons.light_button": {
+          "size": [
+            150,
+            20
+          ],
+          "$pressed_button_name": "button.menu_quit",
+          "$button_text": "pauseScreen.quit",
+          "variables": [
+            {
+              "requires": "$is_secondary_client",
+              "$button_text": "pauseScreen.secondaryClientLeave"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "light_main_pause_panel": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_property_name": "(not #toggle_state)",
+        "source_control_name": "hide_mod_menu",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "light_pause_buttons@light_pause_buttons_panel": {}
+      },
+      {
+        "bg": {
+          "texture": "textures/ui/screen_background",
+          "type": "image",
+          "fill": true,
+          "layer": -1,
+          "alpha": 0.35,
+          "size": [
             "100%",
             "100%"
-        ],
-        "layer": -1,
-        "bindings": [
-            {
-                "binding_type": "view",
-                "source_control_name": "mod_menu",
-                "source_property_name": "(not #toggle_state)",
-                "target_property_name": "#visible"
-            }
-        ],
-        "controls": [
-            {
-                "content": {
-                    "type": "panel",
-                    "size": [
-                        260,
-                        165
-                    ],
-                    "controls": [
-                        {
-                            "@main_menu_bg": {}
-                        }
-                    ]
-                }
-            }
-        ]
-    },
-    "main_menu_bg": {
-        "type": "panel",
-        "bindings": [
-            {
-                "binding_type": "view",
-                "source_control_name": "(not mod_menu)",
-                "source_property_name": "#toggle_state",
-                "target_property_name": "#visible"
-            }
-        ],
-        "controls": [
-            {
-                "save@light_buttons.light_button": {
-                    "size": [
-                        96,
-                        25
-                    ],
-                    "offset": [
-                        0,
-                        103
-                    ],
-                    "anchor_from": "top_middle",
-                    "anchor_to": "top_middle",
-                    "$pressed_button_name": "button.menu_quit",
-                    "$button_text": "Save And Quit"
-                }
-            },
-            {
-                "settings_button@light_buttons.light_button": {
-                    "size": [
-                        96,
-                        25
-                    ],
-                    "offset": [
-                        0,
-                        77
-                    ],
-                    "anchor_from": "top_middle",
-                    "anchor_to": "top_middle",
-                    "$pressed_button_name": "button.menu_settings",
-                    "$button_text": "Settings"
-                }
-            },
-            {
-                "play_button@light_buttons.light_button": {
-                    "size": [
-                        96,
-                        25
-                    ],
-                    "offset": [
-                        0,
-                        51
-                    ],
-                    "anchor_from": "top_middle",
-                    "anchor_to": "top_middle",
-                    "$pressed_button_name": "button.menu_continue",
-                    "$button_text": "Resume"
-                }
-            }
-        ]
-    }
+          ]
+        }
+      },
+      {
+        "light_pause_info@light_pause_info_panel": {}
+      }
+    ]
+  },
+  "light_pause_content": {
+    "type": "panel",
+    "controls": [
+      {
+        "mod_menu_toggle@mod_menu_toggle": {}
+      },
+      {
+        "light_main_pause_panel@light_main_pause_panel": {}
+      }
+    ]
+  }
 }
