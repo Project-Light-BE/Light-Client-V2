@@ -1,1 +1,70 @@
-{"namespace":"light_play_content","light_play_content_panel":{"$screen_animations":[],"type":"panel","$achievements_ignored|default":false,"$feedback_ignored|default":false,"$store_ignored|default":false,"$is_toolbox_ignored|default":false,"size":["100%","100%"],"variables":[{"requires":"$education_edition","$achievements_ignored":true,"$store_ignored|default":true},{"requires":"$gear_vr","$feedback_ignored":true},{"requires":"$fire_tv","$feedback_ignored":true},{"requires":"$nx_os","$feedback_ignored":true},{"requires":"(not $supports_xbl_achievements)","$achievements_ignored":true,"$feedback_ignored":true},{"requires":"$trial","$achievements_ignored":true},{"requires":"(not $is_desktop or $is_publish)","$is_toolbox_ignored":true}],"bindings":[{"binding_name":"(not #screen_needs_rebuild)","binding_name_override":"#visible"}],"controls":[{"light_bg@light_play.light_bg":{}},{"light_header@light_play_extra.header":{}},{"light_quick_play_button@light_play.light_quick_play_button":{}},{"light_settings@light_play.light_settings":{}},{"light_realm_invites@light_play.light_realm_invites":{}}]}}
+{
+  "namespace": "light_play_content",
+  "light_play_content_panel": {
+    "$screen_animations": [],
+    "type": "panel",
+    "$achievements_ignored|default": false,
+    "$feedback_ignored|default": false,
+    "$store_ignored|default": false,
+    "$is_toolbox_ignored|default": false,
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "variables": [
+      {
+        "requires": "$education_edition",
+        "$achievements_ignored": true,
+        "$store_ignored|default": true
+      },
+      {
+        "requires": "$gear_vr",
+        "$feedback_ignored": true
+      },
+      {
+        "requires": "$fire_tv",
+        "$feedback_ignored": true
+      },
+      {
+        "requires": "$nx_os",
+        "$feedback_ignored": true
+      },
+      {
+        "requires": "(not $supports_xbl_achievements)",
+        "$achievements_ignored": true,
+        "$feedback_ignored": true
+      },
+      {
+        "requires": "$trial",
+        "$achievements_ignored": true
+      },
+      {
+        "requires": "(not $is_desktop or $is_publish)",
+        "$is_toolbox_ignored": true
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "(not #screen_needs_rebuild)",
+        "binding_name_override": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "light_bg@light_play.light_bg": {}
+      },
+      {
+        "light_header@light_play_extra.header": {}
+      },
+      {
+        "light_quick_play_button@light_play.light_quick_play_button": {}
+      },
+      {
+        "light_settings@light_play.light_settings": {}
+      },
+      {
+        "light_realm_invites@light_play.light_realm_invites": {}
+      }
+    ]
+  }
+}
