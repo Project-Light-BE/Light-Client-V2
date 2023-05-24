@@ -1,1 +1,114 @@
-{"namespace":"light_play_extra","header":{"size":["100%","25px"],"offset":[0,"-2px"],"texture":"textures/ui/header_bar","type":"image","anchor_from":"top_middle","anchor_to":"top_middle","$header_text":"PLAY","controls":[{"navigation_tabs":{"type":"stack_panel","orientation":"horizontal","anchor_from":"left_middle","anchor_to":"left_middle","offset":[15,0],"controls":[{"world@play.world_navigation_tab":{"size":[22,22],"$tab_text_name":"","$tab_icon":"play.worlds_icon"}},{"padding":{"type":"panel","size":[2,2]}},{"friends@play.friends_navigation_tab":{"size":[22,22],"$tab_text_name":"","$tab_icon":"play.friends_icon"}},{"padding":{"type":"panel","size":[2,2]}},{"server@play.server_navigation_tab":{"size":[22,22],"$tab_icon":"play.lan_icon","$tab_text_name":""}}]}},{"x_image@common.light_close_button":{"layer":200,"anchor_from":"right_middle","anchor_to":"right_middle","offset":[-2,-1],"$pressed_button_name":"button.menu_exit"}},{"header_label":{"anchor_from":"center","anchor_to":"center","color":"black","layer":1,"max_size":["95%",10],"font_type":"MinecraftTen","text":"$header_text","text_alignment":"center","type":"label","offset":[0,-2]}}]}}
+{
+  "namespace": "light_play_extra",
+  "header": {
+    "size": [
+      "100%",
+      "25px"
+    ],
+    "offset": [
+      0,
+      "-2px"
+    ],
+    "texture": "textures/ui/header_bar",
+    "type": "image",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "$header_text": "PLAY",
+    "controls": [
+      {
+        "navigation_tabs": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "offset": [
+            15,
+            0
+          ],
+          "controls": [
+            {
+              "world@play.world_navigation_tab": {
+                "size": [
+                  22,
+                  22
+                ],
+                "$tab_text_name": "",
+                "$tab_icon": "play.worlds_icon"
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [
+                  2,
+                  2
+                ]
+              }
+            },
+            {
+              "friends@play.friends_navigation_tab": {
+                "size": [
+                  22,
+                  22
+                ],
+                "$tab_text_name": "",
+                "$tab_icon": "play.friends_icon"
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [
+                  2,
+                  2
+                ]
+              }
+            },
+            {
+              "server@play.server_navigation_tab": {
+                "size": [
+                  22,
+                  22
+                ],
+                "$tab_icon": "play.lan_icon",
+                "$tab_text_name": ""
+              }
+            }
+          ]
+        }
+      },
+      {
+        "x_image@common.light_close_button": {
+          "layer": 200,
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "offset": [
+            -2,
+            -1
+          ],
+          "$pressed_button_name": "button.menu_exit"
+        }
+      },
+      {
+        "header_label": {
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "color": "black",
+          "layer": 1,
+          "max_size": [
+            "95%",
+            10
+          ],
+          "font_type": "MinecraftTen",
+          "text": "$header_text",
+          "text_alignment": "center",
+          "type": "label",
+          "offset": [
+            0,
+            -2
+          ]
+        }
+      }
+    ]
+  }
+}
