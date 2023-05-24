@@ -1,1 +1,79 @@
-{"namespace":"light_command_block","second_tick":{"type":"label","size":["default",10],"anchor_from":"top_middle","anchor_to":"top_middle","offset":[0,15],"text":"#delay_tick","bindings":[{"binding_type":"global","binding_condition":"always","binding_name":"#command_tick_delay"},{"binding_type":"view","source_property_name":"('idk' + #command_tick_delay)","target_property_name":"#cmdb_delay"},{"binding_type":"view","source_property_name":"(#cmdb_delay - 'idk')","target_property_name":"#cmd_delay_tick"},{"binding_type":"view","source_property_name":"(#cmd_delay_tick / 20)","target_property_name":"#delay_second"},{"binding_type":"view","source_property_name":"(#delay_second / 60)","target_property_name":"#minute"},{"binding_type":"view","source_property_name":"(#delay_second / 60)","target_property_name":"#delay_minute"},{"binding_type":"view","source_property_name":"(#delay_minute / 60)","target_property_name":"#delay_time_hours"},{"binding_type":"view","source_property_name":"(#delay_minute - (#delay_time_hours * 60))","target_property_name":"#delay_time_minutes"},{"binding_type":"view","source_property_name":"(#delay_second - (#minute * 60))","target_property_name":"#delay_time_seconds"},{"binding_type":"view","source_property_name":"(((#cmd_delay_tick * 10) / 2) - (#delay_second * 100))","target_property_name":"#delay_time_demical_seconds"},{"binding_type":"view","source_property_name":"(('§f0' + ((('§f' + #delay_time_demical_seconds + '§f') - '§f5§f' - '§f0§f') - '§f')) - '§f010' - '§f015' - '§f020' - '§f025' - '§f030' - '§f035' - '§f040' - '§f045' - '§f050' - '§f055' - '§f060' - '§f065' - '§f070' - '§f075' - '§f080' - '§f085' - '§f090' - '§f095')","target_property_name":"#fixed_number"},{"binding_type":"view","source_property_name":"('§zTime: ' + #delay_time_hours + 'h:' + #delay_time_minutes + 'm:' + #delay_time_seconds + '.' + #fixed_number + #delay_time_demical_seconds + 's')","target_property_name":"#delay_tick"}]}}
+{
+  "namespace": "light_command_block",
+  "second_tick": {
+    "type": "label",
+    "size": [
+      "default",
+      10
+    ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "offset": [
+      0,
+      15
+    ],
+    "text": "#delay_tick",
+    "bindings": [
+      {
+        "binding_type": "global",
+        "binding_condition": "always",
+        "binding_name": "#command_tick_delay"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "('idk' + #command_tick_delay)",
+        "target_property_name": "#cmdb_delay"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#cmdb_delay - 'idk')",
+        "target_property_name": "#cmd_delay_tick"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#cmd_delay_tick / 20)",
+        "target_property_name": "#delay_second"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#delay_second / 60)",
+        "target_property_name": "#minute"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#delay_second / 60)",
+        "target_property_name": "#delay_minute"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#delay_minute / 60)",
+        "target_property_name": "#delay_time_hours"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#delay_minute - (#delay_time_hours * 60))",
+        "target_property_name": "#delay_time_minutes"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#delay_second - (#minute * 60))",
+        "target_property_name": "#delay_time_seconds"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(((#cmd_delay_tick * 10) / 2) - (#delay_second * 100))",
+        "target_property_name": "#delay_time_demical_seconds"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(('§f0' + ((('§f' + #delay_time_demical_seconds + '§f') - '§f5§f' - '§f0§f') - '§f')) - '§f010' - '§f015' - '§f020' - '§f025' - '§f030' - '§f035' - '§f040' - '§f045' - '§f050' - '§f055' - '§f060' - '§f065' - '§f070' - '§f075' - '§f080' - '§f085' - '§f090' - '§f095')",
+        "target_property_name": "#fixed_number"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "('§zTime: ' + #delay_time_hours + 'h:' + #delay_time_minutes + 'm:' + #delay_time_seconds + '.' + #fixed_number + #delay_time_demical_seconds + 's')",
+        "target_property_name": "#delay_tick"
+      }
+    ]
+  }
+}
