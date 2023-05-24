@@ -1,1 +1,30 @@
-{"format_version":"1.10.0","animation_controllers":{"controller.animation.greenscreen":{"initial_state":"default","states":{"default":{"transitions":[{"is_holding":"query.is_sneaking && query.is_in_ui && query.get_equipped_item_name == 'slime_ball'"}]},"is_holding":{"particle_effects":[{"effect":"greenscreen","locator":"head"}],"transitions":[{"default":"query.is_sneaking && query.is_in_ui && query.get_equipped_item_name == 'nautilus_shell'"}]}}}}}
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.greenscreen": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "is_holding": "query.is_sneaking && query.is_in_ui && query.get_equipped_item_name == 'slime_ball'"
+            }
+          ]
+        },
+        "is_holding": {
+          "particle_effects": [
+            {
+              "effect": "greenscreen",
+              "locator": "head"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "query.is_sneaking && query.is_in_ui && query.get_equipped_item_name == 'nautilus_shell'"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
